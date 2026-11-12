@@ -12,6 +12,7 @@ would catch. These files are the per-fault data behind the paper's tables.
 | `TAXONOMY.md` | The fault classes, each with examples |
 | `SUMMARY.md` | The tables computed from the three CSV files |
 | `summarize.py` | Recomputes every table in `SUMMARY.md` from the CSV files (Python standard library only) |
+| `SUPPLEMENT.md` | Tables and passages of the paper's full text that did not fit the track's word limit: the package table (S1), the second machine's table (S2, compiled separately; its underlying sheet is not published), plants per round (S3), re-planted faults (S4), classes by gate (S5), recorded costs (S6) |
 
 Packages are named by what they do. Record identifiers such as `R07:118` point to internal review records that
 are not published. The package code is not released, so a row can be checked for arithmetic and consistency but

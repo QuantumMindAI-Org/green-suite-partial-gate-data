@@ -1,0 +1,151 @@
+mutant_id,operator,target,line,change,verdict,failing_tests,behaviour_tests_failing,suite_seconds,equivalent_looking,equivalence_reason
+X001,CMP,readback step,198,comparison == -> !=,killed_behaviour,3,test_readback_accepts_both_candidates; test_rehearsal_slot_a_and_stand_in_ab,9.9,,
+X002,CMP,publisher (install and rollback core),259,comparison == -> !=,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,9.7,,
+X003,CMP,readback step,171,comparison < -> <=,killed_static_only,1,,12.5,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X004,CMP,publisher (install and rollback core),71,comparison == -> !=,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,9.9,,
+X005,CMP,precheck and go-ahead step,48,comparison == -> !=,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,9.8,,
+X006,CMP,precheck and go-ahead step,30,comparison == -> !=,killed_behaviour,3,test_mode_walk_refuses_each_violation; test_rehearsal_slot_a_and_stand_in_ab,9.3,,
+X007,CMP,publisher (install and rollback core),198,comparison == -> !=,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,10.1,,
+X008,CMP,readback step,144,comparison == -> !=,killed_static_only,1,,12.0,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X009,CMP,publisher (install and rollback core),126,comparison == -> !=,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,9.4,,
+X010,CMP,install step,40,comparison == -> !=,killed_static_only,1,,12.5,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X011,CMP,rollback step,52,comparison < -> <=,killed_static_only,1,,12.6,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X012,CMP,rollback go-ahead step,10,comparison == -> !=,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,10.4,,
+X013,CMP,install step,54,comparison > -> >=,killed_static_only,1,,12.8,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X014,CMP,install step,35,comparison <= -> <,killed_static_only,1,,12.6,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X015,CMP,install step,52,comparison < -> <=,killed_static_only,1,,13.3,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X016,CMP,rollback go-ahead step,15,comparison == -> !=,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,11.6,,
+X017,CMP,install step,33,comparison == -> !=,killed_static_only,1,,13.7,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X018,CMP,publisher (install and rollback core),198,comparison == -> !=,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,11.6,,
+X019,CMP,readback step,183,comparison == -> !=,killed_behaviour,3,test_readback_accepts_both_candidates; test_rehearsal_slot_a_and_stand_in_ab,11.2,,
+X020,CMP,readback step,177,comparison == -> !=,killed_static_only,1,,13.6,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X021,CMP,publisher (install and rollback core),242,comparison == -> !=,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,11.7,,
+X022,CMP,rehearsal readback step,11,comparison == -> !=,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,11.3,,
+X023,CMP,publisher (install and rollback core),60,comparison == -> !=,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,10.7,,
+X024,CMP,publisher (install and rollback core),77,comparison == -> !=,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,10.8,,
+X025,CMP,rollback step,99,comparison == -> !=,killed_static_only,1,,13.8,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X026,CMP,publisher (install and rollback core),134,comparison == -> !=,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,10.7,,
+X027,CMP,readback step,195,comparison == -> !=,killed_behaviour,3,test_readback_accepts_both_candidates; test_rehearsal_slot_a_and_stand_in_ab,11.2,,
+X028,CMP,rehearsal readback step,22,comparison == -> !=,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,11.1,,
+X029,CMP,readback step,135,comparison == -> !=,killed_behaviour,3,test_readback_accepts_both_candidates; test_rehearsal_slot_a_and_stand_in_ab,11.1,,
+X030,CMP,readback step,213,comparison == -> !=,killed_behaviour,3,test_readback_accepts_both_candidates; test_rehearsal_slot_a_and_stand_in_ab,10.7,,
+X031,CMP,precheck and go-ahead step,30,comparison == -> !=,killed_behaviour,3,test_mode_walk_refuses_each_violation; test_rehearsal_slot_a_and_stand_in_ab,9.5,,
+X032,CMP,precheck and go-ahead step,41,comparison == -> !=,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,9.6,,
+X033,CMP,readback step,187,comparison == -> !=,killed_behaviour,3,test_readback_accepts_both_candidates; test_rehearsal_slot_a_and_stand_in_ab,10.0,,
+X034,CMP,rollback step,40,comparison == -> !=,killed_static_only,1,,12.5,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X035,CMP,install step,33,comparison == -> !=,killed_static_only,1,,13.1,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X036,CMP,readback step,169,comparison == -> !=,killed_static_only,1,,12.9,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X037,CMP,publisher (install and rollback core),214,comparison == -> !=,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,11.3,,
+X038,CONST,precheck and go-ahead step,51,constant 2 -> 3,killed_static_only,1,,12.8,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X039,CONST,rollback step,36,constant 65536 -> 65537,killed_static_only,1,,13.1,yes,read chunk size only; the loop reads to the same end
+X040,CONST,readback step,179,constant True -> False,killed_static_only,1,,12.9,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X041,CONST,publisher (install and rollback core),84,constant 0 -> 1,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,11.2,,
+X042,CONST,publisher (install and rollback core),252,constant True -> False,killed_static_only,2,,13.9,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X043,CONST,publisher (install and rollback core),275,constant False -> True,killed_static_only,2,,13.2,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X044,CONST,rehearsal readback step,10,constant 1 -> 2,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,10.4,,
+X045,CONST,rehearsal readback step,26,constant 404 -> 405,killed_static_only,1,,12.7,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X046,CONST,readback step,141,constant 0 -> 1,killed_behaviour,4,test_readback_accepts_both_candidates; test_readback_refuses_each_failure_slot_a; test_rehearsal_slot_a_and_stand_in_ab,9.7,,
+X047,CONST,publisher (install and rollback core),126,constant 0 -> 1,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,9.8,,
+X048,CONST,rollback step,95,constant False -> True,killed_static_only,1,,12.6,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X049,CONST,rollback step,96,constant 2 -> 3,killed_static_only,1,,13.0,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X050,CONST,readback step,46,constant 1024 -> 1025,killed_static_only,1,,12.6,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X051,CONST,precheck and go-ahead step,51,constant 1 -> 2,killed_static_only,1,,12.6,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X052,CONST,publisher (install and rollback core),74,constant 1 -> 2,killed_static_only,2,,13.1,yes,reads at most one more byte; the length check that follows still refuses growth
+X053,CONST,rollback step,48,constant 131072 -> 131073,killed_static_only,1,,13.2,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X054,CONST,install step,54,constant 0 -> 1,killed_static_only,1,,13.6,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X055,CONST,publisher (install and rollback core),156,constant 6 -> 7,killed_static_only,2,,13.6,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X056,CONST,precheck and go-ahead step,48,constant 0 -> 1,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,10.3,,
+X057,CONST,install step,87,constant 16384 -> 16385,killed_static_only,1,,13.8,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X058,CONST,publisher (install and rollback core),27,constant 2908 -> 2909,killed_behaviour,3,test_paths_in_order_and_pins_match_the_delta; test_rehearsal_slot_a_and_stand_in_ab,10.7,,
+X059,CONST,rehearsal readback step,11,constant 4 -> 5,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,11.3,,
+X060,CONST,precheck and go-ahead step,52,constant 0 -> 1,killed_static_only,1,,13.6,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X061,CONST,publisher (install and rollback core),25,constant 12487 -> 12488,killed_behaviour,3,test_paths_in_order_and_pins_match_the_delta; test_rehearsal_slot_a_and_stand_in_ab,10.4,,
+X062,CONST,publisher (install and rollback core),70,constant 262144 -> 262145,killed_static_only,2,,13.7,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X063,CONST,install step,47,constant 2 -> 3,killed_static_only,1,,14.2,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X064,CONST,readback step,199,constant 2 -> 3,killed_behaviour,3,test_readback_accepts_both_candidates; test_rehearsal_slot_a_and_stand_in_ab,11.5,,
+X065,CONST,publisher (install and rollback core),217,constant 2 -> 3,killed_static_only,2,,13.9,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X066,CONST,precheck and go-ahead step,37,constant 48 -> 49,killed_behaviour,3,test_precheck_pins_every_packet_file_walks_modes_first_and_checks_parents; test_rehearsal_slot_a_and_stand_in_ab,9.6,,
+X067,CONST,readback step,187,constant 1 -> 2,killed_behaviour,3,test_readback_accepts_both_candidates; test_rehearsal_slot_a_and_stand_in_ab,10.1,,
+X068,CONST,rollback step,47,constant 2 -> 3,killed_static_only,1,,12.5,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X069,CONST,publisher (install and rollback core),152,constant 0 -> 1,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,9.7,,
+X070,CONST,publisher (install and rollback core),111,constant True -> False,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,9.9,,
+X071,CONST,read-only snapshot step,19,constant 0 -> 1,killed_static_only,1,,12.7,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X072,CONST,install step,87,constant 40 -> 41,killed_static_only,1,,12.7,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X073,CONST,publisher (install and rollback core),131,constant 1 -> 2,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,10.2,,
+X074,CONST,publisher (install and rollback core),26,constant 55217 -> 55218,killed_behaviour,3,test_paths_in_order_and_pins_match_the_delta; test_rehearsal_slot_a_and_stand_in_ab,10.2,,
+X075,DEL,publisher (install and rollback core),162,one statement replaced by pass,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,10.2,,
+X076,DEL,rollback step,85,one statement replaced by pass,killed_static_only,1,,12.7,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X077,DEL,precheck and go-ahead step,47,one statement replaced by pass,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,10.3,,
+X078,DEL,rollback go-ahead step,22,one statement replaced by pass,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,11.1,,
+X079,DEL,readback step,139,one statement replaced by pass,killed_behaviour,4,test_readback_accepts_both_candidates; test_readback_refuses_each_failure_slot_a; test_rehearsal_slot_a_and_stand_in_ab,10.2,,
+X080,DEL,read-only snapshot step,9,one statement replaced by pass,killed_static_only,1,,12.9,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X081,DEL,read-only snapshot step,19,one statement replaced by pass,killed_static_only,1,,12.9,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X082,DEL,precheck and go-ahead step,51,one statement replaced by pass,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,10.0,,
+X083,DEL,publisher (install and rollback core),92,one statement replaced by pass,killed_static_only,2,,12.2,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X084,DEL,publisher (install and rollback core),153,one statement replaced by pass,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,10.4,,
+X085,DEL,publisher (install and rollback core),151,one statement replaced by pass,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,9.7,,
+X086,DEL,install step,83,one statement replaced by pass,killed_static_only,1,,12.3,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X087,DEL,rollback step,13,one statement replaced by pass,killed_static_only,1,,12.4,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X088,DEL,precheck and go-ahead step,32,one statement replaced by pass,killed_behaviour,3,test_mode_walk_refuses_each_violation; test_rehearsal_slot_a_and_stand_in_ab,9.5,,
+X089,DEL,publisher (install and rollback core),91,one statement replaced by pass,killed_static_only,2,,12.7,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X090,DEL,rehearsal readback step,13,one statement replaced by pass,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,10.2,,
+X091,DEL,publisher (install and rollback core),54,one statement replaced by pass,killed_static_only,2,,12.6,,not judged: depends on the caller passing a path object
+X092,DEL,readback step,213,one statement replaced by pass,killed_static_only,1,,12.6,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X093,DEL,publisher (install and rollback core),186,one statement replaced by pass,killed_static_only,2,,12.9,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X094,DEL,read-only snapshot step,19,one statement replaced by pass,killed_static_only,1,,13.1,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X095,DEL,readback step,120,one statement replaced by pass,killed_static_only,1,,13.8,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X096,DEL,publisher (install and rollback core),268,one statement replaced by pass,killed_static_only,2,,14.0,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X097,DEL,publisher (install and rollback core),95,one statement replaced by pass,killed_static_only,2,,14.0,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X098,DEL,install step,82,one statement replaced by pass,killed_static_only,1,,13.7,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X099,DEL,publisher (install and rollback core),62,one statement replaced by pass,killed_static_only,2,,13.7,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X100,DEL,readback step,117,one statement replaced by pass,killed_behaviour,4,test_readback_accepts_both_candidates; test_readback_refuses_each_failure_slot_a; test_rehearsal_slot_a_and_stand_in_ab,10.5,,
+X101,DEL,install step,56,one statement replaced by pass,killed_static_only,1,,14.4,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X102,DEL,rollback step,91,one statement replaced by pass,killed_static_only,1,,14.3,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X103,DEL,rollback step,36,one statement replaced by pass,killed_static_only,1,,13.8,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X104,DEL,precheck and go-ahead step,34,one statement replaced by pass,killed_static_only,1,,13.6,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X105,DEL,readback step,217,one statement replaced by pass,killed_behaviour,4,test_readback_accepts_both_candidates; test_readback_refuses_each_failure_slot_a; test_rehearsal_slot_a_and_stand_in_ab,10.1,,
+X106,DEL,publisher (install and rollback core),276,one statement replaced by pass,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,10.8,,
+X107,DEL,rollback step,100,one statement replaced by pass,killed_static_only,1,,13.1,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X108,DEL,publisher (install and rollback core),91,one statement replaced by pass,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,30.3,,
+X109,DEL,publisher (install and rollback core),187,one statement replaced by pass,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,10.4,,
+X110,DEL,precheck and go-ahead step,59,one statement replaced by pass,killed_behaviour,3,test_precheck_pins_every_packet_file_walks_modes_first_and_checks_parents; test_rehearsal_slot_a_and_stand_in_ab,10.3,,
+X111,DEL,readback step,91,one statement replaced by pass,killed_behaviour,5,test_readback_accepts_both_candidates; test_readback_refuses_each_failure_slot_a; test_rehearsal_slot_a_and_stand_in_ab; test_rollback_refuses_revised_page_bytes_it_did_not_write,9.1,,
+X112,SWAP,publisher (install and rollback core),152,first two call arguments swapped,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,9.8,,
+X113,SWAP,readback step,197,first two call arguments swapped,killed_behaviour,4,test_readback_accepts_both_candidates; test_readback_refuses_each_failure_slot_a; test_rehearsal_slot_a_and_stand_in_ab,10.0,,
+X114,SWAP,rollback go-ahead step,33,first two call arguments swapped,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,10.7,,
+X115,SWAP,readback step,146,first two call arguments swapped,killed_behaviour,4,test_readback_accepts_both_candidates; test_readback_refuses_each_failure_slot_a; test_rehearsal_slot_a_and_stand_in_ab,9.7,,
+X116,SWAP,install step,83,first two call arguments swapped,killed_static_only,1,,12.7,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X117,SWAP,readback step,133,first two call arguments swapped,killed_behaviour,4,test_readback_accepts_both_candidates; test_readback_refuses_each_failure_slot_a; test_rehearsal_slot_a_and_stand_in_ab,10.5,,
+X118,SWAP,publisher (install and rollback core),152,first two call arguments swapped,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,10.6,,
+X119,SWAP,install step,91,first two call arguments swapped,killed_static_only,1,,13.3,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X120,SWAP,install step,87,first two call arguments swapped,killed_behaviour,2,test_callers_and_rollback_writer_point_at_only,12.7,,
+X121,SWAP,rollback step,53,first two call arguments swapped,killed_static_only,1,,12.7,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X122,SWAP,publisher (install and rollback core),264,first two call arguments swapped,killed_static_only,2,,12.6,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X123,SWAP,publisher (install and rollback core),171,first two call arguments swapped,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,10.0,,
+X124,SWAP,precheck and go-ahead step,50,first two call arguments swapped,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,9.7,,
+X125,SWAP,read-only snapshot step,13,first two call arguments swapped,killed_static_only,1,,13.0,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X126,SWAP,publisher (install and rollback core),168,first two call arguments swapped,killed_static_only,2,,12.6,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X127,SWAP,publisher (install and rollback core),153,first two call arguments swapped,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,9.9,,
+X128,SWAP,publisher (install and rollback core),77,first two call arguments swapped,killed_static_only,2,,13.7,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X129,SWAP,readback step,212,first two call arguments swapped,killed_behaviour,4,test_readback_accepts_both_candidates; test_readback_refuses_each_failure_slot_a; test_rehearsal_slot_a_and_stand_in_ab,10.4,,
+X130,SWAP,publisher (install and rollback core),91,first two call arguments swapped,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,10.9,,
+X131,SWAP,publisher (install and rollback core),232,first two call arguments swapped,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,12.1,,
+X132,SWAP,readback step,152,first two call arguments swapped,killed_static_only,1,,15.7,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X133,SWAP,precheck and go-ahead step,69,first two call arguments swapped,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,11.7,,
+X134,SWAP,readback step,196,first two call arguments swapped,killed_behaviour,4,test_readback_accepts_both_candidates; test_readback_refuses_each_failure_slot_a; test_rehearsal_slot_a_and_stand_in_ab,16.2,,
+X135,SWAP,readback step,213,first two call arguments swapped,killed_behaviour,4,test_readback_accepts_both_candidates; test_readback_refuses_each_failure_slot_a; test_rehearsal_slot_a_and_stand_in_ab,15.9,,
+X136,SWAP,precheck and go-ahead step,8,first two call arguments swapped,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,15.5,,
+X137,SWAP,publisher (install and rollback core),218,first two call arguments swapped,killed_static_only,2,,18.5,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X138,SWAP,readback step,95,first two call arguments swapped,killed_behaviour,4,test_readback_accepts_both_candidates; test_readback_refuses_each_failure_slot_a; test_rehearsal_slot_a_and_stand_in_ab,14.0,,
+X139,SWAP,rehearsal readback step,27,first two call arguments swapped,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,15.1,,
+X140,SWAP,install step,36,first two call arguments swapped,killed_static_only,1,,17.3,yes,arguments of min() swapped; min is symmetric
+X141,SWAP,publisher (install and rollback core),145,first two call arguments swapped,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,13.7,,
+X142,SWAP,rollback go-ahead step,33,first two call arguments swapped,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,14.5,,
+X143,SWAP,readback step,145,first two call arguments swapped,killed_behaviour,4,test_readback_accepts_both_candidates; test_readback_refuses_each_failure_slot_a; test_rehearsal_slot_a_and_stand_in_ab,12.2,,
+X144,SWAP,publisher (install and rollback core),182,first two call arguments swapped,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,12.4,,
+X145,SWAP,readback step,135,first two call arguments swapped,killed_behaviour,4,test_readback_accepts_both_candidates; test_readback_refuses_each_failure_slot_a; test_rehearsal_slot_a_and_stand_in_ab,12.0,,
+X146,SWAP,publisher (install and rollback core),230,first two call arguments swapped,killed_behaviour,2,test_rehearsal_slot_a_and_stand_in_ab,13.5,,
+X147,SWAP,read-only snapshot step,14,first two call arguments swapped,killed_static_only,1,,15.3,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X148,SWAP,publisher (install and rollback core),125,first two call arguments swapped,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,12.2,,
+X149,DEL,readback step,174,one statement replaced by pass,killed_static_only,1,,14.6,no,changes behaviour (judged from the mutated line); no behaviour test reaches it
+X150,DEL,publisher (install and rollback core),157,one statement replaced by pass,killed_behaviour,3,test_rehearsal_slot_a_and_stand_in_ab,11.3,,

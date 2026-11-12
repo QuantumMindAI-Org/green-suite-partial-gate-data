@@ -1,0 +1,454 @@
+package,round,plant_id,what_changed,fault_class,caught,caught_by,caught_by_kind,planted_by,miss_could_change_action,miss_effect_note,source
+one-job submit script,r1,P01,hour: 05:30:00 becomes blocked,B,caught,2 failing: TestRules.test_hour(F); TestSubmit.test_hour_boundaries_through_submit(F),behaviour test,reviewer,n/a (caught),,R01:3
+one-job submit script,r1,P02,hour: < 05:30 written <=,B,caught,2 failing: TestRules.test_hour(F); TestSubmit.test_hour_boundaries_through_submit(F),behaviour test,reviewer,n/a (caught),,R01:4
+one-job submit script,r1,P03,hour: 00:00:00 allowed,B,caught,2 failing: TestRules.test_hour(F); TestSubmit.test_midnight(F),behaviour test,reviewer,n/a (caught),,R01:5
+one-job submit script,r1,P04,window: 06:00:00 refused (< for <=),B,caught,5 failing: TestSubmit.test_allowed_hours_window(F); TestSubmit.test_hour_boundaries_through_submit(F); TestSubmit.test_later_day_needs_note(F); TestSubmit.test_reserve_day_allowed_when_released(F); TestSubmit.test_reserve_days(F),behaviour test,reviewer,n/a (caught),,R01:6
+one-job submit script,r1,P05,window: 20:00:00 allowed (<= for <),B,caught,1 failing: TestSubmit.test_allowed_hours_window(F),behaviour test,reviewer,n/a (caught),,R01:7
+one-job submit script,r1,P06,usage: 600 blocked (>= for >),B,caught,3 failing: TestRules.test_usage_refusals(F); TestRules.test_usage_sums(F); TestSubmit.test_usage_600_allowed_601_refused(F),behaviour test,reviewer,n/a (caught),,R01:8
+one-job submit script,r1,P07,usage: 601 allowed,B,caught,3 failing: TestRules.test_usage_refusals(F); TestRules.test_usage_sums(F); TestSubmit.test_usage_600_allowed_601_refused(F),behaviour test,reviewer,n/a (caught),,R01:9
+one-job submit script,r1,P08,reserve constant 375,B,caught,3 failing: TestRules.test_days(F); TestRules.test_later_day(F); TestSubmit.test_usage_600_allowed_601_refused(F),behaviour test,reviewer,n/a (caught),,R01:10
+one-job submit script,r1,P09,cap in the usage sum 6,B,caught,4 failing: TestRules.test_usage_refusals(F); TestRules.test_usage_sums(F); TestSubmit.test_usage_600_allowed_601_refused(F); TestVerdict.test_usage_and_charge_flags(F),behaviour test,reviewer,n/a (caught),,R01:11
+one-job submit script,r1,P10,options cap set to an older script's value,W,caught,2 failing: TestKitNames.test_settings_payload(F); TestSubmit.test_one_create_then_second_submit_refused(F),behaviour test,reviewer,n/a (caught),,R01:12
+one-job submit script,r1,P11,cap set under a wrong option name,W,caught,38 failing: TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_started_not_cancelled(F); TestFetch.test_fetch_and_analysis(F),behaviour test,reviewer,n/a (caught),,R01:13
+one-job submit script,r1,P12,optimisation level 1,W,caught,38 failing: TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_started_not_cancelled(F); TestCircuits.test_compiled_every_line(F),behaviour test,reviewer,n/a (caught),,R01:14
+one-job submit script,r1,P13,gate twirling constant True,W,caught,38 failing: TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_started_not_cancelled(F); TestFetch.test_fetch_and_analysis(F),behaviour test,reviewer,n/a (caught),,R01:15
+one-job submit script,r1,P14,decoupling set True in apply_options,W,caught,38 failing: TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_started_not_cancelled(F); TestFetch.test_fetch_and_analysis(F),behaviour test,reviewer,n/a (caught),,R01:16
+one-job submit script,r1,P15,measure twirling set True in apply_options,W,caught,38 failing: TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_started_not_cancelled(F); TestFetch.test_fetch_and_analysis(F),behaviour test,reviewer,n/a (caught),,R01:17
+one-job submit script,r1,P16,seed 20261103,W,missed,none,none,reviewer,no,the seed does not change the compiled set; it only misstates the record (R02:78),R01:18
+one-job submit script,r1,P17,layout order 142/140 swapped,W,caught,1 failing: TestFetch.test_fetch_and_analysis(F),behaviour test,reviewer,n/a (caught),,R01:19
+one-job submit script,r1,P18,layout sorted in transpile,W,caught,38 failing: TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_started_not_cancelled(F); TestCircuits.test_compiled_every_line(F),behaviour test,reviewer,n/a (caught),,R01:20
+one-job submit script,r1,P19,classical bit order reversed,W,caught,38 failing: TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_started_not_cancelled(F); TestCircuits.test_compiled_every_line(F),behaviour test,reviewer,n/a (caught),,R01:21
+one-job submit script,r1,P20,delay unit ns,W,caught,38 failing: TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_started_not_cancelled(F); TestCircuits.test_compiled_every_line(F),behaviour test,reviewer,n/a (caught),,R01:22
+one-job submit script,r1,P21,wait 6 us written 8 us,W,caught,38 failing: TestCircuits.test_registered_lines_parse_and_match(E); TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_started_not_cancelled(F),behaviour test,reviewer,n/a (caught),,R01:23
+one-job submit script,r1,P22,round-up becomes round-down,L,caught,1 failing: TestCircuits.test_round_up_rule(F),behaviour test,reviewer,n/a (caught),,R01:24
+one-job submit script,r1,P23,round-up limit 0.5 us,B,caught,1 failing: TestCircuits.test_round_up_rule(F),behaviour test,reviewer,n/a (caught),,R01:25
+one-job submit script,r1,P24,+Y basis order h then sdg,W,caught,39 failing: TestCircuits.test_registered_lines_parse_and_match(E); TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_started_not_cancelled(F),behaviour test,reviewer,n/a (caught),,R01:26
+one-job submit script,r1,P25,-X: x before h,W,caught,39 failing: TestCircuits.test_registered_lines_parse_and_match(E); TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_started_not_cancelled(F),behaviour test,reviewer,n/a (caught),,R01:27
+one-job submit script,r1,P26,-Y: x before h,W,caught,39 failing: TestCircuits.test_registered_lines_parse_and_match(E); TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_started_not_cancelled(F),behaviour test,reviewer,n/a (caught),,R01:28
+one-job submit script,r1,P27,shots constant 1024,W,caught,6 failing: TestFetch.test_fetch_and_analysis(F); TestSubmit.test_one_create_then_second_submit_refused(F); TestVerdict.test_clean(F); TestVerdict.test_late_and_void_beats_flagged(F); TestVerdict.test_readback_failed_flags(F); TestVerdict.test_stamp_equals_start_flags_not_voids(F),behaviour test,reviewer,n/a (caught),,R01:29
+one-job submit script,r1,P28,shots 1024 in the pubs only,W,caught,26 failing: TestFetch.test_fetch_late_start_calibration_inside(E); TestSubmit.test_same_day_is_first_day(E); TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F),behaviour test,reviewer,n/a (caught),,R01:30
+one-job submit script,r1,P29,logical (uncompiled) circuits sent,W,missed,none,none,reviewer,yes,"changes what is sent; one of the three misses the review says could change what is sent or how many jobs are created (R02:21,25)",R01:31
+one-job submit script,r1,P30,second barrier missing,W,caught,38 failing: TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_started_not_cancelled(F); TestCircuits.test_compiled_every_line(F),behaviour test,reviewer,n/a (caught),,R01:32
+one-job submit script,r1,P31,VOID calibration-inside turned FLAGGED,L,caught,3 failing: TestFetch.test_fetch_late_start_calibration_inside(F); TestVerdict.test_stamp_equals_start_but_inside_run_voids(F); TestVerdict.test_voids(F),behaviour test,reviewer,n/a (caught),,R01:33
+one-job submit script,r1,P32,VOID does not beat FLAGGED,L,caught,3 failing: TestFetch.test_fetch_late_start_calibration_inside(F); TestVerdict.test_late_and_void_beats_flagged(F); TestVerdict.test_stamp_equals_start_but_inside_run_voids(F),behaviour test,reviewer,n/a (caught),,R01:34
+one-job submit script,r1,P33,stamp == start accepted as record,B,caught,2 failing: TestVerdict.test_stamp_equals_start_but_inside_run_voids(F); TestVerdict.test_stamp_equals_start_flags_not_voids(F),behaviour test,reviewer,n/a (caught),,R01:35
+one-job submit script,r1,P34,inside test compares with finish,L,caught,3 failing: TestFetch.test_fetch_late_start_calibration_inside(F); TestVerdict.test_stamp_equals_start_but_inside_run_voids(F); TestVerdict.test_voids(F),behaviour test,reviewer,n/a (caught),,R01:36
+one-job submit script,r1,P35,same-stamp rule weakened,G,caught,2 failing: TestVerdict.test_stamp_equals_start_but_inside_run_voids(F); TestVerdict.test_voids(F),behaviour test,reviewer,n/a (caught),,R01:37
+one-job submit script,r1,P36,cancel deadline from the earliest base,L,missed,none,none,reviewer,yes,could cancel a job before four hours and turn a valid run into NOT RUN (R02:70),R01:38
+one-job submit script,r1,P37,four hours written three,B,caught,2 failing: TestCancel.test_not_late_yet(F); TestVerdict.test_exactly_four_hours_is_not_late(F),behaviour test,reviewer,n/a (caught),,R01:39
+one-job submit script,r1,P38,LATE: >= for >,B,caught,1 failing: TestVerdict.test_exactly_four_hours_is_not_late(F),behaviour test,reviewer,n/a (caught),,R01:40
+one-job submit script,r1,P39,LATE base: latest not earliest,L,missed,none,none,reviewer,not stated,LATE base from the latest time (R02:71),R01:41
+one-job submit script,r1,P40,cancel also when RUNNING,L,caught,1 failing: TestCancel.test_started_not_cancelled(F),behaviour test,reviewer,n/a (caught),,R01:42
+one-job submit script,r1,P41,BLOCKED days end 11-21,B,caught,2 failing: TestRules.test_days(F); TestRules.test_later_day(F),behaviour test,reviewer,n/a (caught),,R01:43
+one-job submit script,r1,P42,BLOCKED days keyed on R=0,L,caught,3 failing: TestRules.test_days(F); TestSubmit.test_reserve_day_allowed_when_released(F); TestSubmit.test_reserve_days(F),behaviour test,reviewer,n/a (caught),,R01:44
+one-job submit script,r1,P43,unposted charge never added,L,missed,none,none,reviewer,yes,the rule decides whether a second job may be created (R02:29),R01:45
+one-job submit script,r1,P44,unposted rule inverted,L,missed,none,none,reviewer,yes,the rule decides whether a second job may be created (R02:29),R01:46
+one-job submit script,r1,P45,R dropped from the usage sum,L,caught,2 failing: TestRules.test_usage_refusals(F); TestSubmit.test_usage_600_allowed_601_refused(F),behaviour test,reviewer,n/a (caught),,R01:47
+one-job submit script,r1,P46,freeze-record hash compare on 8 chars,G,missed,none,none,reviewer,not stated,weakened refusal check (R02:65-66),R01:48
+one-job submit script,r1,P47,script hash compare on 6 chars,G,missed,none,none,reviewer,not stated,weakened refusal check (R02:65-67),R01:49
+one-job submit script,r1,P48,registered circuits file hash not checked,G,missed,none,none,reviewer,not stated,the line parser still guards the circuits (R02:68),R01:50
+one-job submit script,r1,P49,owner-word time not checked against now,G,missed,none,none,reviewer,not stated,weakened refusal check (R02:69),R01:51
+one-job submit script,r1,P50,"R keyed on the sentence text, not the flag",L,missed,none,none,reviewer,no,guarded in practice by the freeze-record loader (R02:78),R01:52
+one-job submit script,r1,P51,repeat sentence check weakened,G,caught,1 failing: TestSubmit.test_freeze_missing_and_invalid(E),behaviour test,reviewer,n/a (caught),,R01:53
+one-job submit script,r1,P52,jobs since freeze: one tolerated,G,caught,1 failing: TestSubmit.test_jobs_since_freeze(F),behaviour test,reviewer,n/a (caught),,R01:54
+one-job submit script,r1,P53,VOID more-than-one-job allows 2 always,G,caught,1 failing: TestVerdict.test_voids(F),behaviour test,reviewer,n/a (caught),,R01:55
+one-job submit script,r1,P54,root marker written in the run folder,S,caught,2 failing: TestSubmit.test_fake_mode_markers_are_separate(F); TestSubmit.test_one_create_then_second_submit_refused(F),behaviour test,reviewer,n/a (caught),,R01:56
+one-job submit script,r1,P55,KeyboardInterrupt not caught at the create,S,caught,"suite run aborted (no test count, no named failure; R01:56 and its log)",suite abort,reviewer,n/a (caught),,R01:57
+one-job submit script,r1,P56,shots check dropped from the VOID rule,G,caught,1 failing: TestVerdict.test_voids(F),behaviour test,reviewer,n/a (caught),,R01:58
+one-job submit script,r1,P57,device constant changed to another processor,W,caught,43 failing: TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_started_not_cancelled(F); TestFetch.test_fetch_and_analysis(F),behaviour test,reviewer,n/a (caught),,R01:59
+one-job submit script,r1,P58,usage_limit_reached ignored,G,caught,1 failing: TestRules.test_usage_refusals(F),behaviour test,reviewer,n/a (caught),,R01:60
+one-job submit script,r1,P59,window may widen before 05:30,G,caught,1 failing: TestSubmit.test_window_may_not_widen_registration(E),behaviour test,reviewer,n/a (caught),,R01:61
+one-job submit script,r1,P60,settings read-back not compared to prepare,G,missed,none,none,reviewer,no,the settings check still enforces the four registered settings (R02:78),R01:62
+one-job submit script,r2,P16,seed 20261103,W,caught,TestCircuits.test_seed_and_level_passed_to_transpile(F),behaviour test,reviewer,n/a (caught),,R03:7
+one-job submit script,r2,P29,logical (uncompiled) circuits made into the pubs,W,caught,TestSubmit.test_same_day_is_first_day(E); TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F),behaviour test,reviewer,n/a (caught),,R03:8
+one-job submit script,r2,P36,cancel deadline from the earliest base,L,caught,TestCancel.test_service_created_later_moves_the_deadline(F); TestRules.test_cancel_deadline_and_late_base(F),behaviour test,reviewer,n/a (caught),,R03:9
+one-job submit script,r2,P39,LATE base from the latest,L,caught,TestFetch.test_late_base_uses_earliest(F); TestRules.test_cancel_deadline_and_late_base(F),behaviour test,reviewer,n/a (caught),,R03:10
+one-job submit script,r2,P43,unposted charge never added,L,caught,TestRepeat.test_unposted_606_refused(E); TestRepeat.test_unposted_adds_7_600_passes_601_refused(E); TestRules.test_unposted_charge_both_directions(F),behaviour test,reviewer,n/a (caught),,R03:11
+one-job submit script,r2,P44,unposted rule inverted,L,caught,TestRepeat.test_unposted_606_refused(E); TestRepeat.test_unposted_adds_7_600_passes_601_refused(E); TestRepeat.test_next_day_repeat_posted_600_passes_and_is_not_flagged(F); TestRepeat.test_same_day_repeat_refused(F); TestRepeat.test_third_job_impossible(F),behaviour test,reviewer,n/a (caught),,R03:12
+one-job submit script,r2,P46,freeze-record hashes compared on 8 chars,G,caught,TestRules.test_full_length_hash_compare(F); TestSubmit.test_hash_last_character(F),behaviour test,reviewer,n/a (caught),,R03:13
+one-job submit script,r2,P47,script hash compared on 6 chars,G,caught,TestSubmit.test_script_hash_last_character(F),behaviour test,reviewer,n/a (caught),,R03:14
+one-job submit script,r2,P48,registered circuits file hash not checked,G,caught,TestRules.test_full_length_hash_compare(F),behaviour test,reviewer,n/a (caught),,R03:15
+one-job submit script,r2,P49,owner-word time not checked against now,G,caught,TestSubmit.test_owner_word_in_future(F),behaviour test,reviewer,n/a (caught),,R03:16
+one-job submit script,r2,P50,R keyed on the sentence text,L,caught,TestRules.test_reserve_r_keyed_on_flag(F),behaviour test,reviewer,n/a (caught),,R03:17
+one-job submit script,r2,P60,settings not compared with the prepared plan,G,caught,TestSubmit.test_settings_differ_from_plan_refused_with_fields(E),behaviour test,reviewer,n/a (caught),,R03:18
+one-job submit script,r2,N01,ledger per root again,S,caught,TestFetch.test_fetch_analysis_and_record_reading(E); TestRepeat.test_undecided_first_run_needs_director_decision(E); TestSubmit.test_fake_refuses_the_real_root(E); TestSubmit.test_hour_and_window_through_submit(E); TestSubmit.test_lock_held_refuses(E),behaviour test,reviewer,n/a (caught),,R03:19
+one-job submit script,r2,N02,lock never taken,C,caught,TestSubmit.test_lock_held_refuses(E),behaviour test,reviewer,n/a (caught),,R03:20
+one-job submit script,r2,N03,lock opened without O_EXCL,C,caught,TestSubmit.test_lock_held_refuses(E),behaviour test,reviewer,n/a (caught),,R03:21
+one-job submit script,r2,N04,markers not re-checked under the lock,C,missed,none,none,reviewer,no,redundant: the exclusive marker write still refuses (R04:114),R03:22
+one-job submit script,r2,N05,"create marker written in the run folder, not the ledger",S,caught,TestRepeat.test_unposted_606_refused(E); TestSubmit.test_prepared_elsewhere_then_create_refused(E); TestRepeat.test_altered_first_fetch_refused(F); TestRepeat.test_next_day_repeat_posted_600_passes_and_is_not_flagged(F); TestRepeat.test_not_unclear_refused(F),behaviour test,reviewer,n/a (caught),,R03:23
+one-job submit script,r2,N06,own-phase marker not checked,S,caught,TestRepeat.test_third_job_impossible(F); TestSubmit.test_failed_create_then_new_root_refused(F),behaviour test,reviewer,n/a (caught),,R03:24
+one-job submit script,r2,N07,first run allowed after a repeat marker,S,missed,none,none,reviewer,no,redundant: the first-run marker check refuses (R04:115),R03:25
+one-job submit script,r2,N08,repeat allowed without the first marker,S,missed,none,none,reviewer,no,redundant: checked again later (R04:116),R03:26
+one-job submit script,r2,N09,prepare allowed after a create,S,caught,TestSubmit.test_failed_create_then_new_root_refused(F); TestSubmit.test_one_create_then_everything_refused(F),behaviour test,reviewer,n/a (caught),,R03:27
+one-job submit script,r2,N10,same-day repeat (< for <=),B,caught,TestRepeat.test_same_day_repeat_refused(E),behaviour test,reviewer,n/a (caught),,R03:28
+one-job submit script,r2,N11,repeat day from the reading only,L,missed,none,none,reviewer,no,redundant while the reading always follows the submission (R04:117),R03:29
+one-job submit script,r2,N12,repeat THE DAY starts on the reading day,B,caught,TestRepeat.test_next_day_repeat_posted_600_passes_and_is_not_flagged(F); TestRepeat.test_third_job_impossible(F); TestRepeat.test_undecided_first_run_needs_director_decision(F); TestRepeat.test_unposted_adds_7_600_passes_601_refused(F),behaviour test,reviewer,n/a (caught),,R03:30
+one-job submit script,r2,N13,decision may name a subset of the undecided rules,G,missed,none,none,reviewer,yes,"the code refuses it, but no test guards it and the rule gates a second job (R04:110)",R03:31
+one-job submit script,r2,N14,decision may decide a VOID rule TRIGGERED,G,caught,TestRepeat.test_undecided_first_run_needs_director_decision(E),behaviour test,reviewer,n/a (caught),,R03:32
+one-job submit script,r2,N15,decision not bound to the verdict hash,G,missed,none,none,reviewer,yes,no test guards it; it gates a second job (R04:111),R03:33
+one-job submit script,r2,N16,undecided rules ignored,G,caught,TestRepeat.test_undecided_first_run_needs_director_decision(E),behaviour test,reviewer,n/a (caught),,R03:34
+one-job submit script,r2,N17,analysis input hash not checked,G,caught,TestFetch.test_record_reading_checks_input_and_applies_rules(E),behaviour test,reviewer,n/a (caught),,R03:35
+one-job submit script,r2,N18,phase0 flag only on positive phases,L,missed,none,none,reviewer,no,"decides a published flag, not a job (R04:113)",R03:36
+one-job submit script,r2,N19,NOT_COMPUTED not recorded as VOID,L,caught,TestFetch.test_record_reading_checks_input_and_applies_rules(F),behaviour test,reviewer,n/a (caught),,R03:37
+one-job submit script,r2,N20,repeat after NONE accepted,G,caught,TestRepeat.test_not_unclear_refused(E),behaviour test,reviewer,n/a (caught),,R03:38
+one-job submit script,r2,N21,reading not bound to the counts file,G,missed,none,none,reviewer,yes,no test guards it; it gates a second job (R04:112),R03:39
+one-job submit script,r2,N22,first fetch manifest not verified,G,caught,TestRepeat.test_altered_first_fetch_refused(E),behaviour test,reviewer,n/a (caught),,R03:40
+one-job submit script,r2,N23,pubs-vs-prepare hash refusal disabled,G,missed,none,none,reviewer,no,redundant: the same objects are hash-checked just before (R04:118),R03:41
+one-job submit script,r2,N24,pubs shape check dropped,G,caught,TestSubmit.test_other_objects_sent_refused(F),behaviour test,reviewer,n/a (caught),,R03:42
+one-job submit script,r2,N25,checked pubs differ from the pubs sent,W,caught,TestSubmit.test_pubs_as_sent_are_the_checked_compiled_set(F),behaviour test,reviewer,n/a (caught),,R03:43
+one-job submit script,r2,N26,more-than-one-job: own-job match ignored,L,caught,TestVerdict.test_voids(F),behaviour test,reviewer,n/a (caught),,R03:44
+one-job submit script,r2,N27,UNKNOWN creates not counted,L,missed,none,none,reviewer,no,redundant: no second create can follow an unknown one (R04:119),R03:45
+one-job submit script,r2,N28,M1: DONE without times treated as never ran,L,caught,TestFetch.test_metrics_missing_flags_and_exits_6(F); TestFetch.test_metrics_raising_flags_and_exits_6(F); TestVerdict.test_done_without_times_never_unflagged(F),behaviour test,reviewer,n/a (caught),,R03:46
+one-job submit script,r2,N29,M4: not-honoured finish read decided as before,L,caught,TestFetch.test_finish_not_honoured_exits_6(F); TestVerdict.test_finish_not_honoured_is_undecided(F),behaviour test,reviewer,n/a (caught),,R03:47
+one-job submit script,r2,N30,E26: NOT RUN only when the cancel returned,L,caught,TestFetch.test_cancel_raised_then_cancelled_is_not_run(F); TestVerdict.test_not_run_including_cancel_that_raised(F),behaviour test,reviewer,n/a (caught),,R03:48
+one-job submit script,r2,N31,--fake allowed in the real root,G,caught,TestSubmit.test_fake_refuses_the_real_root(F),behaviour test,reviewer,n/a (caught),,R03:49
+one-job submit script,r2,N32,refused prepare leaves no day evidence,S,missed,none,none,reviewer,no,affects a flag only (R04:120),R03:50
+one-job submit script,r3,Q01,tag constant shortened,W,caught,TestR3Create.test_tag_sent_and_recorded(F),behaviour test,reviewer,n/a (caught),,R05:7
+one-job submit script,r3,Q02,tag never set on the options,W,caught,TestCancel.test_cancel_once(F); TestCancel.test_cancel_raises_recorded_once(F); TestCancel.test_dry_run(F); TestCancel.test_not_late_yet(F); TestCancel.test_service_created_later_moves_the_deadline(F),behaviour test,reviewer,n/a (caught),,R05:8
+one-job submit script,r3,Q03,settings_ok ignores the tag,G,missed,none,none,reviewer,no,redundant: the tag is still set by apply_options and any options difference from the prepared plan refuses (payload_diff) (R05:9; R06 section 5),R05:9
+one-job submit script,r3,Q04,freeze record job_tag not checked,G,caught,TestR3Guards.test_freeze_record_tag_checked(E),behaviour test,reviewer,n/a (caught),,R05:10
+one-job submit script,r3,Q05,fake root inside the real ledger allowed,G,caught,TestR3Guards.test_fake_root_inside_real_paths_refused_before_any_folder(F),behaviour test,reviewer,n/a (caught),,R05:11
+one-job submit script,r3,Q06,_inside only equality,G,caught,TestR3Guards.test_fake_root_inside_real_paths_refused_before_any_folder(F),behaviour test,reviewer,n/a (caught),,R05:12
+one-job submit script,r3,Q07,canonical-path check disabled,G,caught,TestR3Create.test_ledger_parent_symlink_refused(F); TestR3Create.test_x3_ledger_swapped_for_a_symlink(F),behaviour test,reviewer,n/a (caught),,R05:13
+one-job submit script,r3,Q08,"real witness in the given root, not the fixed root",S,caught,TestR3Create.test_ledger_parent_symlink_refused(E); TestR3Create.test_x1c_everything_local_deleted_service_tag_refuses(E); TestR3Create.test_n04_rechecked_under_the_lock(F); TestR3Create.test_tag_sent_and_recorded(F); TestR3Guards.test_n07_first_run_refused_after_repeat_signs(F),behaviour test,reviewer,n/a (caught),,R05:14
+one-job submit script,r3,Q09,ledger job file not counted as evidence,S,caught,TestR3Create.test_x1_only_the_job_file_left(F),behaviour test,reviewer,n/a (caught),,R05:15
+one-job submit script,r3,Q10,create row not counted as evidence,S,caught,TestR3Create.test_x1_only_the_create_row_left(F),behaviour test,reviewer,n/a (caught),,R05:16
+one-job submit script,r3,Q11,ledger/witness disagreement not refused,S,caught,TestR3Create.test_x1b_ledger_emptied_witness_disagrees(F),behaviour test,reviewer,n/a (caught),,R05:17
+one-job submit script,r3,Q12,own-phase witness ignored,S,missed,none,none,reviewer,no,redundant: a witness without ledger evidence refuses LEDGER_WITNESS_DISAGREE (R05:18; R06 section 5),R05:18
+one-job submit script,r3,Q13,witness marker not written before the call,O,caught,TestR3Create.test_tag_sent_and_recorded(F); TestSubmit.test_failed_create_then_new_root_refused(F),behaviour test,reviewer,n/a (caught),,R05:19
+one-job submit script,r3,Q14,unreadable tagged listing tolerated,G,caught,TestSubmit.test_other_jobs_recorded_not_blocking(E),behaviour test,reviewer,n/a (caught),,R05:20
+one-job submit script,r3,Q15,tagged listing result ignored,G,caught,TestR3Create.test_x1c_everything_local_deleted_service_tag_refuses(E); TestR3Guards.test_tagged_job_already_on_the_account(E),behaviour test,reviewer,n/a (caught),,R05:21
+one-job submit script,r3,Q16,listing asks for a different tag,W,caught,TestR3Create.test_x1c_everything_local_deleted_service_tag_refuses(E); TestR3Guards.test_tagged_job_already_on_the_account(E); TestRepeat.test_unposted_606_refused(E); TestR3Repeat.test_n11_repeat_day_after_the_first_submission_too(F); TestRepeat.test_next_day_repeat_posted_600_passes_and_is_not_flagged(F),behaviour test,reviewer,n/a (caught),,R05:22
+one-job submit script,r3,Q17,tagged count not positive evidence,L,caught,TestR3Fetch.test_two_tagged_jobs_is_positive_evidence(F); TestVerdict.test_voids(F),behaviour test,reviewer,n/a (caught),,R05:23
+one-job submit script,r3,Q18,partial ledger record decided NOT_TRIGGERED,L,caught,TestR3Fetch.test_k1_disagreeing_ledger_record_is_undecided(F); TestR3Fetch.test_k1_missing_ledger_record_is_undecided_not_void(F),behaviour test,reviewer,n/a (caught),,R05:24
+one-job submit script,r3,Q19,failed record writes exit 0,F,caught,TestR3Create.test_k2_attempts_row_fails_never_exit_0(E); TestR3Create.test_k2_record_write_fails_never_exit_0(E); TestSubmit.test_exception_after_create_writing_id(F),behaviour test,reviewer,n/a (caught),,R05:25
+one-job submit script,r3,Q20,missing ledger job file read as no-match,L,missed,none,none,reviewer,no,"redundant: False is still 'not True', so the rule stays UNDECIDED, never VOID (R05:26; R06 section 5)",R05:26
+one-job submit script,r3,Q21,later-day flag from submission_record again,S,caught,TestR3Fetch.test_k3_later_day_flag_survives_a_lost_submission_record(F),behaviour test,reviewer,n/a (caught),,R05:27
+one-job submit script,r3,Q22,record-reading dry run writes,S,caught,TestR3Fetch.test_record_reading_dry_run_writes_nothing(E),behaviour test,reviewer,n/a (caught),,R05:28
+one-job submit script,r3,Q23,record-reading dry run creates the ledger folder,S,missed,none,none,reviewer,no,cosmetic: an empty ledger folder only; no file written (R05:29; R06 section 5),R05:29
+one-job submit script,r3,Q24,unparsed summary rows tolerated,G,missed,none,none,reviewer,no,"redundant in practice: an unparsed row also breaks 'parsed rows == counts measured N' (Q25, caught) (R05:30; R06 section 5)",R05:30
+one-job submit script,r3,Q25,row count vs counts measured not checked,G,caught,TestR3Parser.test_count_mismatch_is_undecided(F),behaviour test,reviewer,n/a (caught),,R05:31
+one-job submit script,r3,Q26,seven-qubit coverage not checked,G,missed,none,none,reviewer,no,redundant in practice: a missing row also breaks the count check (Q25) (R05:32; R06 section 5),R05:32
+one-job submit script,r3,Q27,repeat on an UNDECIDED reading,G,caught,TestR3Repeat.test_undecided_reading_blocks_the_repeat(E),behaviour test,reviewer,n/a (caught),,R05:33
+one-job submit script,r3,Q28,missing rules not filled in,F,caught,TestR3Verdict.test_every_rule_listed_in_every_branch(F),behaviour test,reviewer,n/a (caught),,R05:34
+one-job submit script,r3,Q29,same-stamp rule NOT_MADE written in the failed-read branch removed,F,missed,none,none,reviewer,no,redundant: the final pass lists the rule as NOT_MADE anyway (Q28 caught) (R05:35; R06 section 5),R05:35
+one-job submit script,r3,Q30,prepare ignores the witness,S,caught,TestR3Create.test_x1b_ledger_emptied_witness_disagrees(F),behaviour test,reviewer,n/a (caught),,R05:36
+once-only sealed evaluator,r1,F01,reader marker check removed,G,caught,3 reader tests,behaviour test,reviewer,n/a (caught),,R07:89
+once-only sealed evaluator,r1,F02,O_EXCL dropped on marker create,C,caught,test_open_writes_once (single run) (re-run by hand after a harness string miss; R07:120),behaviour test,reviewer,n/a (caught),,R07:90
+once-only sealed evaluator,r1,F03,O_EXCL dropped on HOLDOUT_RESULT.json,C,caught,test_open_writes_once,behaviour test,reviewer,n/a (caught),,R07:91
+once-only sealed evaluator,r1,F04,finished-marker check removed,G,caught,test_finished_marker,behaviour test,reviewer,n/a (caught),,R07:92
+once-only sealed evaluator,r1,F05,hash binding on first key only,G,caught,test_marker_hash_mismatch,behaviour test,reviewer,n/a (caught),,R07:93
+once-only sealed evaluator,r1,F06,NOT_HOLDOUT check removed,G,caught,test_non_holdout_id,behaviour test,reviewer,n/a (caught),,R07:94
+once-only sealed evaluator,r1,F07,gates imports the reader,G,caught,test_gates_do_not_import_the_reader,behaviour test,reviewer,n/a (caught),,R07:95
+once-only sealed evaluator,r1,F08,GATES hash binding removed,G,caught,test_open_without_gates,behaviour test,reviewer,n/a (caught),,R07:96
+once-only sealed evaluator,r1,F09,failed gate accepted,G,caught,same,behaviour test,reviewer,n/a (caught),,R07:97
+once-only sealed evaluator,r1,F10,gate 3 loosened to 3%,G,caught,3 tests,behaviour test,reviewer,n/a (caught),,R07:98
+once-only sealed evaluator,r1,F11,bootstrap draws 123 not 25 per resample,L,caught,test_bootstrap_matches_reference,behaviour test,reviewer,n/a (caught),,R07:99
+once-only sealed evaluator,r1,F12,unpaired resample C vs G,L,missed,none,none,reviewer,no,a real statistical error in a reported number (R07:120),R07:100
+once-only sealed evaluator,r1,F13,mean of per-group PQ instead of pooled,L,missed,none,none,reviewer,no,a real statistical error in a reported number (R07:120),R07:101
+once-only sealed evaluator,r1,F14,seed changed,W,caught,2 tests,behaviour test,reviewer,n/a (caught),,R07:102
+once-only sealed evaluator,r1,F15,draws changed (1999),W,caught,2 tests,behaviour test,reviewer,n/a (caught),,R07:103
+once-only sealed evaluator,r1,F16,normal approximation bounds,L,caught,bootstrap test,behaviour test,reviewer,n/a (caught),,R07:104
+once-only sealed evaluator,r1,F17,percentile bounds swapped,L,caught,bootstrap test,behaviour test,reviewer,n/a (caught),,R07:105
+once-only sealed evaluator,r1,F18,partial result file written before compute,O,caught,test_open_writes_once,behaviour test,reviewer,n/a (caught),,R07:106
+once-only sealed evaluator,r1,F19,scores printed before result file,O,missed,none,none,reviewer,not stated,named among the most serious misses for the once-only goal (R07:120),R07:107
+once-only sealed evaluator,r1,F20,marker created after compute (order),O,missed,none,none,reviewer,not stated,named among the most serious misses for the once-only goal (R07:120),R07:108
+once-only sealed evaluator,r1,F21,marker never sealed,S,caught,test_open_writes_once,behaviour test,reviewer,n/a (caught),,R07:109
+once-only sealed evaluator,r1,F22,gate 2 band widened to 30%,G,missed,none,none,reviewer,not stated,,R07:110
+once-only sealed evaluator,r1,F23,PQ tolerance 0.003 -> 0.03,G,caught,tolerances test,behaviour test,reviewer,n/a (caught),,R07:111
+once-only sealed evaluator,r1,F24,25-group check removed,G,missed,none,none,reviewer,not stated,,R07:112
+once-only sealed evaluator,r1,F25,generalization sign flipped,L,caught,test_open_writes_once,behaviour test,reviewer,n/a (caught),,R07:113
+once-only sealed evaluator,r1,F26,"H2 compares C with G, not R2",W,missed,none,none,reviewer,no,a real statistical error in a reported number (R07:120),R07:114
+once-only sealed evaluator,r1,F27,gate 1 ignores TP,G,missed,none,none,reviewer,not stated,,R07:115
+once-only sealed evaluator,r1,F28,gate 2 ignores FN,G,missed,none,none,reviewer,not stated,,R07:116
+once-only sealed evaluator,r1,F29,3-row count check on GATES removed,G,missed,none,none,reviewer,not stated,,R07:117
+once-only sealed evaluator,r1,F30,C and R2 arms swapped,W,caught,(no test named in the record),behaviour test,reviewer,n/a (caught),,R07:118
+once-only sealed evaluator,r2,F01,reader marker check removed (open_image),G,caught,"finished_marker_is_refused, marker_hash_mismatch_is_refused, reader_without_a_marker",behaviour test,reviewer,n/a (caught),,R08:76
+once-only sealed evaluator,r2,F02,O_EXCL dropped on marker create,C,caught,"open_writes_once_and_a_second_write_is_refused, resume_after_a_crash_and_a_refused_resume_",behaviour test,reviewer,n/a (caught),,R08:77
+once-only sealed evaluator,r2,F03,O_EXCL dropped on HOLDOUT_RESULT.json,C,caught,open_writes_once_and_a_second_write_is_refused,behaviour test,reviewer,n/a (caught),,R08:78
+once-only sealed evaluator,r2,F04,finished-marker check removed,G,caught,finished_marker_is_refused,behaviour test,reviewer,n/a (caught),,R08:79
+once-only sealed evaluator,r2,F05,hash binding first key only,G,caught,marker_hash_mismatch_is_refused,behaviour test,reviewer,n/a (caught),,R08:80
+once-only sealed evaluator,r2,F06,NOT_HOLDOUT check removed,G,caught,non_holdout_id_is_refused_before_the_file,behaviour test,reviewer,n/a (caught),,R08:81
+once-only sealed evaluator,r2,F07,gates imports the reader,G,missed,none,none,reviewer,not stated,,R08:82
+once-only sealed evaluator,r2,F08,GATES.json hash binding removed,G,caught,open_without_gates_or_with_a_failed_gate,behaviour test,reviewer,n/a (caught),,R08:83
+once-only sealed evaluator,r2,F09,failed gate accepted,G,caught,open_without_gates_or_with_a_failed_gate,behaviour test,reviewer,n/a (caught),,R08:84
+once-only sealed evaluator,r2,F10,gate 3 loosened to 3 percent,G,caught,"a_gate_one_count_off_fails, open_without_gates_or_with_a_failed_gate, tolerances_written_o",behaviour test,reviewer,n/a (caught),,R08:85
+once-only sealed evaluator,r2,F11,"bootstrap 123 draws per resample, not 25 groups",L,missed,none,none,reviewer,not stated,,R08:86
+once-only sealed evaluator,r2,F12,unpaired resample,L,caught,bootstrap_matches_the_reference_and_the_registered_seed,behaviour test,reviewer,n/a (caught),,R08:87
+once-only sealed evaluator,r2,F13,mean of per-group PQ,L,caught,the_interval_pools_counts_before_dividing,behaviour test,reviewer,n/a (caught),,R08:88
+once-only sealed evaluator,r2,F14,seed changed,W,caught,"bootstrap_matches_the_reference_and_the_registered_seed, open_writes_once_and_a_second_wri",behaviour test,reviewer,n/a (caught),,R08:89
+once-only sealed evaluator,r2,F15,draws 1999,W,caught,"bootstrap_matches_the_reference_and_the_registered_seed, open_writes_once_and_a_second_wri",behaviour test,reviewer,n/a (caught),,R08:90
+once-only sealed evaluator,r2,F16,normal approximation bounds,L,missed,none,none,reviewer,not stated,,R08:91
+once-only sealed evaluator,r2,F17,percentile bounds swapped,L,missed,none,none,reviewer,not stated,,R08:92
+once-only sealed evaluator,r2,F18,partial result written before compute,O,caught,gates_then_open_through_the_real_path,behaviour test,reviewer,n/a (caught),,R08:93
+once-only sealed evaluator,r2,F19,score printed before the result file,O,caught,success_prints_nothing,behaviour test,reviewer,n/a (caught),,R08:94
+once-only sealed evaluator,r2,F20,marker taken AFTER compute,O,caught,gates_then_open_through_the_real_path,behaviour test,reviewer,n/a (caught),,R08:95
+once-only sealed evaluator,r2,F21,marker never sealed,S,caught,open_writes_once_and_a_second_write_is_refused,behaviour test,reviewer,n/a (caught),,R08:96
+once-only sealed evaluator,r2,F22,gate 2 count band 30 percent,G,caught,tolerances_written_out_by_hand,behaviour test,reviewer,n/a (caught),,R08:97
+once-only sealed evaluator,r2,F23,PQ tolerance 0.03,G,caught,tolerances_written_out_by_hand,behaviour test,reviewer,n/a (caught),,R08:98
+once-only sealed evaluator,r2,F24,25-group check removed,G,caught,group_count_must_be_25,behaviour test,reviewer,n/a (caught),,R08:99
+once-only sealed evaluator,r2,F25,generalization sign flipped,L,caught,open_writes_once_and_a_second_write_is_refused,behaviour test,reviewer,n/a (caught),,R08:100
+once-only sealed evaluator,r2,F26,H2 compares C with G,W,caught,h2_compares_c_with_r2,behaviour test,reviewer,n/a (caught),,R08:101
+once-only sealed evaluator,r2,F27,gate 1 ignores TP,G,caught,tolerances_written_out_by_hand,behaviour test,reviewer,n/a (caught),,R08:102
+once-only sealed evaluator,r2,F28,gate 2 ignores FN,G,caught,tolerances_written_out_by_hand,behaviour test,reviewer,n/a (caught),,R08:103
+once-only sealed evaluator,r2,F29,three-row check removed,G,caught,gates_json_needs_three_rows,behaviour test,reviewer,n/a (caught),,R08:104
+once-only sealed evaluator,r2,F30,C and R2 swapped,W,caught,open_writes_once_and_a_second_write_is_refused,behaviour test,reviewer,n/a (caught),,R08:105
+once-only sealed evaluator,r2,N01,resume accepted without a ruling,G,caught,resume_requires_a_ruling,behaviour test,reviewer,n/a (caught),,R08:110
+once-only sealed evaluator,r2,N02,resume allowed when a result exists,S,missed,none,none,reviewer,not stated,,R08:111
+once-only sealed evaluator,r2,N03,plain second open allowed (existing marker tolerated),S,caught,"open_writes_once_and_a_second_write_is_refused, resume_after_a_crash_and_a_refused_resume_",behaviour test,reviewer,n/a (caught),,R08:112
+once-only sealed evaluator,r2,N04,resume does not require an unfinished marker,S,missed,none,none,reviewer,not stated,,R08:113
+once-only sealed evaluator,r2,N05,stored prediction hashes not compared on resume,G,missed,none,none,reviewer,not stated,,R08:114
+once-only sealed evaluator,r2,N06,marker under --out (per-output-dir),S,caught,gates_then_open_through_the_real_path,behaviour test,reviewer,n/a (caught),,R08:115
+once-only sealed evaluator,r2,N07,typed prereg hash not compared,G,caught,typed_prereg_hash_is_refused_before_any_file,behaviour test,reviewer,n/a (caught),,R08:116
+once-only sealed evaluator,r2,N08,thread equality not checked,E,caught,threads_must_match_before_the_marker,behaviour test,reviewer,n/a (caught),,R08:117
+once-only sealed evaluator,r2,N09,gate 2 PQ leg removed,G,caught,tolerances_written_out_by_hand,behaviour test,reviewer,n/a (caught),,R08:118
+once-only sealed evaluator,r2,N10,gate 3 not computed (constant geometry counts),W,missed,none,none,reviewer,not stated,,R08:119
+once-only sealed evaluator,r2,N11,manifest not verified file by file,G,missed,none,none,reviewer,not stated,,R08:120
+once-only sealed evaluator,r2,N12,symlinked marker accepted,S,caught,"symlinked_marker_is_refused, symlinked_package_marker_is_refused",behaviour test,reviewer,n/a (caught),,R08:121
+once-only sealed evaluator,r2,N13,predictions not stored before scoring,O,caught,gates_then_open_through_the_real_path,behaviour test,reviewer,n/a (caught),,R08:122
+once-only sealed evaluator,r2,N14,IA score written to stderr before the result,O,caught,gates_then_open_through_the_real_path,behaviour test,reviewer,n/a (caught),,R08:123
+once-only sealed evaluator,r2,N15,pinned split accepted with --allow-short-table,E,missed,none,none,reviewer,not stated,,R08:124
+once-only sealed evaluator,r2,N16,open does not require a registered-cohort GATES.json,G,missed,none,none,reviewer,not stated,,R08:125
+once-only sealed evaluator,r2,N17,GATES.json recorded weights hash not compared,G,missed,none,none,reviewer,not stated,,R08:126
+once-only sealed evaluator,r2,N18,weights set vs candidate runs not checked,G,missed,none,none,reviewer,not stated,,R08:127
+once-only sealed evaluator,r2,N19,GATES.json recorded manifest hash not compared,G,missed,none,none,reviewer,not stated,,R08:128
+once-only sealed evaluator,r2,N20,gates registered check: computed rows replaced by pass,G,missed,none,none,reviewer,not stated,,R08:129
+once-only sealed evaluator,r3,F01,reader marker check removed (open_image),G,caught,"finished_marker_is_refused, marker_hash_mismatch_is_refused, reader_without_a_marker",behaviour test,reviewer,n/a (caught),,R09:69
+once-only sealed evaluator,r3,F02,O_EXCL dropped on marker create,C,missed,none,none,reviewer,not stated,,R09:70
+once-only sealed evaluator,r3,F03,O_EXCL dropped on HOLDOUT_RESULT.json,C,caught,open_writes_once_and_a_second_write_is_refused,behaviour test,reviewer,n/a (caught),,R09:71
+once-only sealed evaluator,r3,F04,finished-marker check removed,G,caught,finished_marker_is_refused,behaviour test,reviewer,n/a (caught),,R09:72
+once-only sealed evaluator,r3,F05,hash binding first key only,G,caught,marker_hash_mismatch_is_refused,behaviour test,reviewer,n/a (caught),,R09:73
+once-only sealed evaluator,r3,F06,NOT_HOLDOUT check removed,G,caught,non_holdout_id_is_refused_before_the_file,behaviour test,reviewer,n/a (caught),,R09:74
+once-only sealed evaluator,r3,F07,gates imports the reader,G,caught,gates_command_does_not_import_the_reader,behaviour test,reviewer,n/a (caught),,R09:75
+once-only sealed evaluator,r3,F08,GATES.json hash binding removed,G,caught,open_without_gates_or_with_a_failed_gate,behaviour test,reviewer,n/a (caught),,R09:76
+once-only sealed evaluator,r3,F09,failed gate accepted,G,caught,open_without_gates_or_with_a_failed_gate,behaviour test,reviewer,n/a (caught),,R09:77
+once-only sealed evaluator,r3,F10,gate 3 loosened to 3 percent,G,caught,"a_gate_one_count_off_fails, open_without_gates_or_with_a_failed_gate, tolerances_written_out_by_hand",behaviour test,reviewer,n/a (caught),,R09:78
+once-only sealed evaluator,r3,F11,"bootstrap 123 draws per resample, not 25 groups",L,caught,interval_matches_a_reference_on_an_asymmetric_table,behaviour test,reviewer,n/a (caught),,R09:79
+once-only sealed evaluator,r3,F12,unpaired resample,L,caught,"bootstrap_matches_the_reference_and_the_registered_seed, interval_matches_a_reference_on_an_asymmetr",behaviour test,reviewer,n/a (caught),,R09:80
+once-only sealed evaluator,r3,F13,mean of per-group PQ,L,caught,"interval_matches_a_reference_on_an_asymmetric_table, the_interval_pools_counts_before_dividing",behaviour test,reviewer,n/a (caught),,R09:81
+once-only sealed evaluator,r3,F14,seed changed,W,caught,"bootstrap_matches_the_reference_and_the_registered_seed, open_writes_once_and_a_second_write_is_refu",behaviour test,reviewer,n/a (caught),,R09:82
+once-only sealed evaluator,r3,F15,draws 1999,W,caught,"bootstrap_matches_the_reference_and_the_registered_seed, open_writes_once_and_a_second_write_is_refu",behaviour test,reviewer,n/a (caught),,R09:83
+once-only sealed evaluator,r3,F16,normal approximation bounds,L,caught,interval_matches_a_reference_on_an_asymmetric_table,behaviour test,reviewer,n/a (caught),,R09:84
+once-only sealed evaluator,r3,F17,percentile bounds swapped,L,caught,interval_matches_a_reference_on_an_asymmetric_table,behaviour test,reviewer,n/a (caught),,R09:85
+once-only sealed evaluator,r3,F18,partial result written before compute,O,caught,"gates_then_open_through_the_real_path, registered_gates_then_open",behaviour test,reviewer,n/a (caught),,R09:86
+once-only sealed evaluator,r3,F19,score printed before the result file,O,caught,success_prints_nothing,behaviour test,reviewer,n/a (caught),,R09:87
+once-only sealed evaluator,r3,F20,marker taken AFTER compute,O,caught,"gates_then_open_through_the_real_path, registered_gates_then_open",behaviour test,reviewer,n/a (caught),,R09:88
+once-only sealed evaluator,r3,F21,marker never sealed,S,caught,open_writes_once_and_a_second_write_is_refused,behaviour test,reviewer,n/a (caught),,R09:89
+once-only sealed evaluator,r3,F22,gate 2 count band 30 percent,G,caught,tolerances_written_out_by_hand,behaviour test,reviewer,n/a (caught),,R09:90
+once-only sealed evaluator,r3,F23,PQ tolerance 0.03,G,caught,tolerances_written_out_by_hand,behaviour test,reviewer,n/a (caught),,R09:91
+once-only sealed evaluator,r3,F24,25-group check removed,G,caught,group_count_must_be_25,behaviour test,reviewer,n/a (caught),,R09:92
+once-only sealed evaluator,r3,F25,generalization sign flipped,L,caught,open_writes_once_and_a_second_write_is_refused,behaviour test,reviewer,n/a (caught),,R09:93
+once-only sealed evaluator,r3,F26,H2 compares C with G,W,caught,h2_compares_c_with_r2,behaviour test,reviewer,n/a (caught),,R09:94
+once-only sealed evaluator,r3,F27,gate 1 ignores TP,G,caught,tolerances_written_out_by_hand,behaviour test,reviewer,n/a (caught),,R09:95
+once-only sealed evaluator,r3,F28,gate 2 ignores FN,G,caught,tolerances_written_out_by_hand,behaviour test,reviewer,n/a (caught),,R09:96
+once-only sealed evaluator,r3,F29,three-row check removed,G,caught,gates_json_needs_three_rows,behaviour test,reviewer,n/a (caught),,R09:97
+once-only sealed evaluator,r3,F30,C and R2 swapped,W,caught,open_writes_once_and_a_second_write_is_refused,behaviour test,reviewer,n/a (caught),,R09:98
+once-only sealed evaluator,r3,N01,resume accepted without a ruling,G,caught,resume_requires_a_ruling,behaviour test,reviewer,n/a (caught),,R09:103
+once-only sealed evaluator,r3,N02,resume allowed when a result exists,S,caught,resume_refuses_when_a_result_exists,behaviour test,reviewer,n/a (caught),,R09:104
+once-only sealed evaluator,r3,N03,plain second open allowed (existing marker tolerated),S,caught,"open_writes_once_and_a_second_write_is_refused, resume_after_a_crash_and_a_refused_resume_after_the_",behaviour test,reviewer,n/a (caught),,R09:105
+once-only sealed evaluator,r3,N04,resume does not require an unfinished marker,S,caught,"resume_refuses_a_different_output_directory, resume_requires_an_unfinished_marker",behaviour test,reviewer,n/a (caught),,R09:106
+once-only sealed evaluator,r3,N05,stored prediction hashes not compared on resume,G,caught,stored_prediction_hashes_are_compared,behaviour test,reviewer,n/a (caught),,R09:107
+once-only sealed evaluator,r3,N06,package marker moved under --out,S,caught,gates_then_open_through_the_real_path,behaviour test,reviewer,n/a (caught),,R09:108
+once-only sealed evaluator,r3,N07,typed prereg hash not compared,G,caught,"gates_command_does_not_import_the_reader, typed_prereg_hash_is_refused_before_any_file",behaviour test,reviewer,n/a (caught),,R09:109
+once-only sealed evaluator,r3,N08,thread equality not checked,E,caught,threads_must_match_before_the_marker,behaviour test,reviewer,n/a (caught),,R09:110
+once-only sealed evaluator,r3,N09,gate 2 PQ leg removed,G,caught,tolerances_written_out_by_hand,behaviour test,reviewer,n/a (caught),,R09:111
+once-only sealed evaluator,r3,N10,gate 3 not computed (constant geometry counts),W,caught,registered_rows_use_the_computed_counts,behaviour test,reviewer,n/a (caught),,R09:112
+once-only sealed evaluator,r3,N11,manifest not verified file by file,G,caught,manifest_is_checked_file_by_file,behaviour test,reviewer,n/a (caught),,R09:113
+once-only sealed evaluator,r3,N12,symlinked marker accepted,S,caught,"symlinked_marker_is_refused, symlinked_package_marker_is_refused",behaviour test,reviewer,n/a (caught),,R09:114
+once-only sealed evaluator,r3,N13,predictions not stored before scoring,O,caught,gates_then_open_through_the_real_path,behaviour test,reviewer,n/a (caught),,R09:115
+once-only sealed evaluator,r3,N14,IA score written to stderr before the result,O,caught,gates_then_open_through_the_real_path,behaviour test,reviewer,n/a (caught),,R09:116
+once-only sealed evaluator,r3,N15,pinned split accepted with --allow-short-table,E,caught,pinned_split_refuses_the_short_table_flag,behaviour test,reviewer,n/a (caught),,R09:117
+once-only sealed evaluator,r3,N16,open does not require a registered-cohort GATES.json,G,caught,(no test named in the record),behaviour test,reviewer,n/a (caught),,R09:118
+once-only sealed evaluator,r3,N17,GATES.json recorded weights hash not compared,G,caught,gates_records_are_compared,behaviour test,reviewer,n/a (caught),,R09:119
+once-only sealed evaluator,r3,N18,weights set vs candidate runs not checked,G,caught,weights_must_equal_the_candidate_runs,behaviour test,reviewer,n/a (caught),,R09:120
+once-only sealed evaluator,r3,N19,GATES.json recorded manifest hash not compared,G,caught,gates_records_are_compared,behaviour test,reviewer,n/a (caught),,R09:121
+once-only sealed evaluator,r3,N20,gates registered check: computed rows replaced by pass,G,caught,registered_rows_use_the_computed_counts,behaviour test,reviewer,n/a (caught),,R09:122
+once-only sealed evaluator,r3,R01,ledger marker missing / disagreeing accepted (ledger ignored),S,missed,none,none,reviewer,not stated,,R09:127
+once-only sealed evaluator,r3,R02,disagreeing markers accepted,S,missed,none,none,reviewer,not stated,,R09:128
+once-only sealed evaluator,r3,R03,result not written to the ledger,S,caught,"a_deleted_package_marker_does_not_open_again, resume_after_a_crash_and_a_refused_resume_after_the_re",behaviour test,reviewer,n/a (caught),,R09:129
+once-only sealed evaluator,r3,R04,resume accepts another out folder,S,caught,resume_refuses_a_different_output_directory,behaviour test,reviewer,n/a (caught),,R09:130
+once-only sealed evaluator,r3,R05,ledger path taken from the environment,E,missed,none,none,reviewer,not stated,,R09:131
+once-only sealed evaluator,r3,R06,"pre-marker views (split hash, pins, group count) moved after the marker",O,caught,registered_gates_then_open,behaviour test,reviewer,n/a (caught),,R09:132
+once-only sealed evaluator,r3,R07,registered test silently uses the short-table flag,E,caught,registered_gates_then_open,behaviour test,reviewer,n/a (caught),,R09:133
+once-only sealed evaluator,r3,R08,helper alias removed (second helper copy possible),E,caught,(no test named in the record),behaviour test,reviewer,n/a (caught),,R09:134
+once-only sealed evaluator,r3,R09,dependencies() called again on the aliased helper,E,missed,none,none,reviewer,no,"equivalent mutant (R09:135,151)",R09:135
+once-only sealed evaluator,r3,R10,ledger result ignored by the result-present check,S,caught,resume_refuses_when_a_result_exists,behaviour test,reviewer,n/a (caught),,R09:136
+once-only sealed evaluator,r3,R11,only the package marker created,S,caught,"a_crash_during_compute_leaves_the_marker, a_deleted_package_marker_does_not_open_again, open_writes_",behaviour test,reviewer,n/a (caught),,R09:137
+once-only sealed evaluator,r3,R12,only the package marker sealed,S,caught,gates_then_open_through_the_real_path,behaviour test,reviewer,n/a (caught),,R09:138
+once-only sealed evaluator,r3,R13,resume checks only the package marker,S,missed,none,none,reviewer,not stated,,R09:139
+once-only sealed evaluator,r3,R14,open_image called without the ledger marker,S,missed,none,none,reviewer,not stated,,R09:140
+once-only sealed evaluator,r3,R15,marker does not record the output folder,S,caught,resume_after_a_crash_and_a_refused_resume_after_the_result,behaviour test,reviewer,n/a (caught),,R09:141
+once-only sealed evaluator,r3,R16,LEDGER_DIR constant changed,E,missed,none,none,reviewer,not stated,,R09:142
+once-only sealed evaluator,r3,R17,symlinked ledger marker accepted,S,missed,none,none,reviewer,not stated,,R09:143
+once-only sealed evaluator,r3,R18,bootstrap seed from the output (not registered),W,caught,"bootstrap_matches_the_reference_and_the_registered_seed, open_writes_once_and_a_second_write_is_refu",behaviour test,reviewer,n/a (caught),,R09:144
+once-only sealed evaluator,r4,H2-void,K2 never matches,L,caught,test_h2_is_void_when_which_is_k2,behaviour test,author (re-run by the reviewer),n/a (caught),,R10:95
+once-only sealed evaluator,r4,H2-always,any which voids,L,caught,test_h2_is_computed_when_which_is_absent_k1_or_kr,behaviour test,author (re-run by the reviewer),n/a (caught),,R10:96
+once-only sealed evaluator,r4,which-dropped,spec which None,W,caught,test_open_voids_h2_when_candidate_which_is_k2,behaviour test,author (re-run by the reviewer),n/a (caught),,R10:97
+once-only sealed evaluator,r4,serialise,rehearsal writes a different document,F,caught,test_rehearsal_hash_matches_the_open_serialisation,behaviour test,author (re-run by the reviewer),n/a (caught),,R10:98
+once-only sealed evaluator,r4,require-25,rehearsal keeps the 25-group rule,G,caught,test_registered_rows_use_the_computed_counts (the author names the rehearsal test; red in mine under another test first),behaviour test,author (re-run by the reviewer),n/a (caught),,R10:99
+once-only sealed evaluator,r4,index,resume index check skipped,G,caught,test_rehearsal_refuses_a_bad_prediction_index,behaviour test,author (re-run by the reviewer),n/a (caught),,R10:100
+once-only sealed evaluator,r4,R01,ledger marker missing ignored,S,caught,test_missing_ledger_marker_is_refused,behaviour test,author (re-run by the reviewer),n/a (caught),,R10:101
+once-only sealed evaluator,r4,R02,byte mismatch ignored,S,caught,test_marker_disagreement_is_refused,behaviour test,author (re-run by the reviewer),n/a (caught),,R10:102
+once-only sealed evaluator,r4,R13,resume checks only package marker,S,caught,test_resume_refuses_when_the_ledger_marker_is_missing,behaviour test,author (re-run by the reviewer),n/a (caught),,R10:103
+once-only sealed evaluator,r4,R14,open_image without ledger marker,S,caught,test_score_holdout_passes_the_ledger_marker,behaviour test,author (re-run by the reviewer),n/a (caught),,R10:104
+once-only sealed evaluator,r4,R17,ledger symlink check dropped,S,caught,test_symlinked_ledger_marker_is_refused,behaviour test,author (re-run by the reviewer),n/a (caught),,R10:105
+once-only sealed evaluator,r4,R05,ledger from environment,E,caught,test_ledger_path_is_not_taken_from_the_environment,behaviour test,author (re-run by the reviewer),n/a (caught),,R10:106
+once-only sealed evaluator,r4,R16,constant changed,E,caught,test_ledger_dir_constant_is_pinned,behaviour test,author (re-run by the reviewer),n/a (caught),,R10:107
+once-only sealed evaluator,r4,M1,exists-check and O_EXCL removed on the marker pair,S,caught,test_open_writes_once_and_a_second_write_is_refused,behaviour test,reviewer,n/a (caught),,R10:112
+once-only sealed evaluator,r4,M1b,"only the ledger half of the check removed, no O_EXCL",S,caught,test_a_deleted_package_marker_does_not_open_again,behaviour test,reviewer,n/a (caught),,R10:113
+once-only sealed evaluator,r4,M2,"markers taken after the read, reader no longer requires them",O,caught,test_finished_marker_is_refused (reader),behaviour test,reviewer,n/a (caught),,R10:114
+once-only sealed evaluator,r4,M3a,seal skipped,S,caught,test_open_writes_once_and_a_second_write_is_refused,behaviour test,reviewer,n/a (caught),,R10:115
+once-only sealed evaluator,r4,M3b,re-open tolerated when markers exist unsealed,S,caught,test_open_writes_once_and_a_second_write_is_refused,behaviour test,reviewer,n/a (caught),,R10:116
+once-only sealed evaluator,r4,M4a,typed candidate hash not compared,G,missed,none,none,reviewer,yes,the check is the line that stops a swapped candidate in the one opening (R10:15),R10:117
+once-only sealed evaluator,r4,M4b,no candidate hash compared at all,G,missed,none,none,reviewer,yes,the check is the line that stops a swapped candidate in the one opening (R10:15),R10:118
+once-only sealed evaluator,r4,M5a,reader reads the file before the cohort check,O,caught,test_non_holdout_id_is_refused_before_the_file,behaviour test,reviewer,n/a (caught),,R10:119
+once-only sealed evaluator,r4,M5b,pre-marker 25-group check removed,G,missed,none,none,reviewer,not stated,"a later check still refuses, after the reads (R10:120)",R10:120
+once-only sealed evaluator,r4,M6a,H1 against R2,W,caught,test_h2_compares_c_with_r2,behaviour test,reviewer,n/a (caught),,R10:121
+once-only sealed evaluator,r4,M6b,G reported as R2,W,missed,none,none,reviewer,no,"a silent wrong reported number (R10:16,122)",R10:122
+once-only sealed evaluator,r4,M7a,bootstrap resamples 2n units,L,caught,test_interval_matches_a_reference_on_an_asymmetric_table,behaviour test,reviewer,n/a (caught),,R10:123
+once-only sealed evaluator,r4,M7b,no resampling (permutation),L,caught,same,behaviour test,reviewer,n/a (caught),,R10:124
+once-only sealed evaluator,r4,M8,interval bounds swapped,L,caught,same,behaviour test,reviewer,n/a (caught),,R10:125
+once-only sealed evaluator,r4,M9,K2 void without the void key,F,caught,test_h2_is_void_when_which_is_k2,behaviour test,reviewer,n/a (caught),,R10:126
+once-only sealed evaluator,r4,M9b,K2 void without the reason,F,caught,same,behaviour test,reviewer,n/a (caught),,R10:127
+once-only sealed evaluator,r4,M10,resume ignores stored predictions and recomputes,S,caught,test_gates_then_open_through_the_real_path (only by EndToEnd),behaviour test,reviewer,n/a (caught),,R10:128
+once-only sealed evaluator,r4,M11,--ledger argument redirects the ledger,E,missed,none,none,reviewer,not stated,,R10:129
+once-only sealed evaluator,r4,M12,resume flag not recorded,F,caught,test_resume_after_a_crash_and_a_refused_resume_after_the_result,behaviour test,reviewer,n/a (caught),,R10:130
+once-only sealed evaluator,r4,M13,out copy written before ledger copy,O,missed,none,none,reviewer,no,low consequence: both copies are checked (R10:131),R10:131
+once-only sealed evaluator,r4,M14,'K2' in str(which),L,missed,none,none,reviewer,no,equivalent for every legal value (R10:132),R10:132
+once-only sealed evaluator,r4,M15,H2 void also when which absent,L,caught,test_open_writes_once_and_a_second_write_is_refused,behaviour test,reviewer,n/a (caught),,R10:133
+GPU training kernel,r1,P01,guard ignores validation list,G,caught,"test_guard_lists_refuses_a_leak, test_run_refuses_before_opening_anything",behaviour test,reviewer,n/a (caught),,R11:7
+GPU training kernel,r1,P02,annotation filter dropped: holdout polygons enter by_group,G,caught,test_holdout_polygons_never_touched,behaviour test,reviewer,n/a (caught),,R11:8
+GPU training kernel,r1,P03,image reader no longer checks allowed ids,G,caught,test_image_reader_refuses_holdout_row,behaviour test,reviewer,n/a (caught),,R11:9
+GPU training kernel,r1,P04,split-plan pin check removed,G,caught,"test_real_plan_with_real_pins, test_split_hash_mismatch_refused",behaviour test,reviewer,n/a (caught),,R11:10
+GPU training kernel,r1,P05,test stage no longer refuses split ids (holdout id in test folder is read),G,missed,none,none,reviewer,not stated,the unplanted code refuses it (R11:30-31),R11:11
+GPU training kernel,r1,P06,soft target -> union of annotators,L,caught,test_soft_target_is_mean_of_annotators,behaviour test,reviewer,n/a (caught),,R11:12
+GPU training kernel,r1,P07,no foreground-centred crops ever (fg list empty),L,missed,none,none,reviewer,no,a silent quality loss (R11:32),R11:13
+GPU training kernel,r1,P08,upsample half-pixel convention changed,L,missed,none,none,reviewer,no,would show only as a lower real validation score (R11:36),R11:14
+GPU training kernel,r1,P09,maps transposed (val and test),L,missed,none,none,reviewer,no,would show only as a lower real validation score (R11:36),R11:15
+GPU training kernel,r1,P10,test maps flipped vertically (test path only),L,missed,none,none,reviewer,yes,a good validation score and a wrong submission file (R11:35-36),R11:16
+GPU training kernel,r1,P11,test path uses T_low as T_high,W,missed,none,none,reviewer,yes,a good validation score and a wrong submission file (R11:35-36),R11:17
+GPU training kernel,r1,P12,limb mask ignored in validation scoring,L,caught,test_rule_and_scorer_known_pq,behaviour test,reviewer,n/a (caught),,R11:18
+GPU training kernel,r1,P13,chosen limb mask not applied to test maps,L,missed,none,none,reviewer,yes,a good validation score and a wrong submission file (R11:35-36),R11:19
+GPU training kernel,r1,P14,CSV written with CRLF,F,missed,none,none,reviewer,not stated,,R11:20
+GPU training kernel,r1,P15,only first instance per test image written,F,missed,none,none,reviewer,not stated,,R11:21
+GPU training kernel,r1,P16,RLE of transposed mask (val and test),F,caught,test_rule_and_scorer_known_pq,behaviour test,reviewer,n/a (caught),,R11:22
+GPU training kernel,r1,P17,stop threshold 0,B,caught,test_dry_kernel_end_to_end,behaviour test,reviewer,n/a (caught),,R11:23
+GPU training kernel,r1,P18,stop rule skipped when PQ is exactly 0,B,caught,test_dry_kernel_end_to_end,behaviour test,reviewer,n/a (caught),,R11:24
+GPU training kernel,r1,P19,blocked/ordinary names inverted for CONTINUE,F,caught,test_dry_kernel_end_to_end,behaviour test,reviewer,n/a (caught),,R11:25
+GPU training kernel,r1,P20,stop rule fed an inflated PQ,W,caught,test_dry_kernel_end_to_end,behaviour test,reviewer,n/a (caught),,R11:26
+static-site release tooling v2,r1,P01,publisher snapshot() drops the sha256 comparison,G,caught,static only. Attack: a one-byte llms.txt change after the GO is INSTALLED,static pin test only,reviewer,n/a (caught),,R12:142
+static-site release tooling v2,r1,P02,publisher backups skipped,S,caught,"rehearsal (rollback fails), test_rehearsal, static",rehearsal,reviewer,n/a (caught),,R12:143
+static-site release tooling v2,r1,P03,publisher ORDER = REPLACED+ADDED,O,caught,"test_paths_in_order, static",behaviour test,reviewer,n/a (caught),,R12:144
+static-site release tooling v2,r1,P04,"publisher rollback ""else"" refusal removed",G,caught,"static only. Attack: rollback writes, then refuses at the end (ROLLBACK_UNCHANGED_DRIFT), half state",static pin test only,reviewer,n/a (caught),,R12:145
+static-site release tooling v2,r1,P05,publisher rollback drops the own-inode check,G,caught,static only (attack: overwrites a same-bytes stranger copy),static pin test only,reviewer,n/a (caught),,R12:146
+static-site release tooling v2,r1,P06,publisher install drops ARTICLE_ALREADY_EXISTS,G,caught,static only (old_new_guard still refuses; nothing changed),static pin test only,reviewer,n/a (caught),,R12:147
+static-site release tooling v2,r1,P07,publisher rollback rmdir even when not empty,G,caught,"static only (attack: OSError after writes, half state)",static pin test only,reviewer,n/a (caught),,R12:148
+static-site release tooling v2,r1,P08,publisher ACTION inside the served tree,E,caught,"rehearsal (changed set), test_rehearsal, static",rehearsal,reviewer,n/a (caught),,R12:149
+static-site release tooling v2,r1,P09,publisher GO expiry not enforced,G,caught,static only,static pin test only,reviewer,n/a (caught),,R12:150
+static-site release tooling v2,r1,P10,publisher L5 dst back to root (slot A),W,caught,static only. Correct: no slot-A behaviour change (see D22 for B),static pin test only,reviewer,n/a (caught),,R12:151
+static-site release tooling v2,r1,C11,precheck PRE drops sha256,G,caught,static only (publisher still refuses at FILE_PIN),static pin test only,reviewer,n/a (caught),,R12:152
+static-site release tooling v2,r1,C12,precheck ARTS wrong path,E,caught,static only (an empty slug dir is then installed into),static pin test only,reviewer,n/a (caught),,R12:153
+static-site release tooling v2,r1,C13,precheck PARENT_DIR checks root not articles/,W,caught,static only (publisher refuses DIRECTORY_OWNER_LINK after CLAIM),static pin test only,reviewer,n/a (caught),,R12:154
+static-site release tooling v2,r1,C14,precheck PACKET_SET weakened,G,caught,"rehearsal NEG_CONTROL_2, test_mode_walk, test_rehearsal",rehearsal,reviewer,n/a (caught),,R12:155
+static-site release tooling v2,r1,C15,precheck GO life 2800 s,G,caught,"rehearsal (publisher GO_TIME), test_rehearsal",rehearsal,reviewer,n/a (caught),,R12:156
+static-site release tooling v2,r1,R16,readback drops a must-have sentence,G,caught,static only (page_sha pins the page anyway),static pin test only,reviewer,n/a (caught),,R12:157
+static-site release tooling v2,r1,R17,readback page_sha weakened,G,caught,"rehearsal NEG_CONTROL_3, test_readback_refuses_each_failure_slot_a",rehearsal,reviewer,n/a (caught),,R12:158
+static-site release tooling v2,r1,R18,readback unchanged-file checks skipped,G,caught,test_readback_refuses_each_failure_slot_a,behaviour test,reviewer,n/a (caught),,R12:159
+static-site release tooling v2,r1,R19,readback INTERNAL emptied,G,caught,test_readback_refuses_each_failure_slot_a,behaviour test,reviewer,n/a (caught),,R12:160
+static-site release tooling v2,r1,R20,readback landing sha weakened,G,caught,static only,static pin test only,reviewer,n/a (caught),,R12:161
+static-site release tooling v2,r1,D21,derive L2 '_' (L4 '%'),F,caught,"test_rehearsal (A+B rollback), predecessor-logic test, slot-B-alone test, edit-count test",behaviour test,reviewer,n/a (caught),,R12:162
+static-site release tooling v2,r1,D22,derive L5 dst root,W,caught,"same four tests as D21 (rehearsal, predecessor-logic, slot-B-alone, edit-count)",behaviour test,reviewer,n/a (caught),,R12:163
+static-site release tooling v2,r1,D23,derive L3 full path,W,caught,"same four tests as D21, plus test_rollback_refuses_revised...",behaviour test,reviewer,n/a (caught),,R12:164
+static-site release tooling v2,r1,D24,derive ignores the stand-in marker file,G,missed,none,none,reviewer,no,"other guards still stopped every stand-in tried: depth, not an open door (R12:219-221)",R12:165
+static-site release tooling v2,r1,D25,derive B_STAND_IN removed,G,caught,test_stand_in_never_reaches_an_install_packet,behaviour test,reviewer,n/a (caught),,R12:166
+static-site release tooling v2,r1,D26,derive substitutes the slot-A date for the date token,W,missed,none,none,reviewer,not stated,every test and rehearsal stays green with the wrong date (R12:216-218),R12:167
+static-site release tooling v2,r1,D27,derive token count weakened,G,caught,test_slot_b_folder_refusals_by_name,behaviour test,reviewer,n/a (caught),,R12:168
+static-site release tooling v2,r1,D28,derive drops one existing article directory from the precheck's parent list,G,caught,test_precheck_pins_every_packet_file...,behaviour test,reviewer,n/a (caught),,R12:169
+static-site release tooling v2,r1,D29,"derive drops ""go"" from INTERNAL",G,caught,"test_internal_word_check_bites, test_release_conditions...",behaviour test,reviewer,n/a (caught),,R12:170
+static-site release tooling v2,r1,D30,derive: typo in the approval note sentence,F,caught,derive refuses (NOTE_POSITION); 25 tests fail,refused by the derivation step,reviewer,n/a (caught),,R12:171
+static-site release tooling v2,r1,D31,derive: kept-line count of the revised page off by one,B,caught,21 tests fail (derive refuses the stand-in),refused by the derivation step,reviewer,n/a (caught),,R12:172
+static-site release tooling v2,r1,D32,derive marker-pair check removed,G,missed,none,none,reviewer,no,"other guards still stopped every stand-in tried: depth, not an open door (R12:219-221)",R12:173
+inference release package,r3,M01,STRIDE 384 -> 256 (model.py:9),W,missed,none,none,reviewer,not stated,"map effect on two images: 173,677 / 204,205, 241; killed as delivered on the review machine: no",R13:144
+inference release package,r3,M02,/255.0 -> /254.0 (model.py:97),W,missed,none,none,reviewer,not stated,"map effect on two images: 452 / 79, 1; killed as delivered on the review machine: no",R13:145
+inference release package,r3,M03,count += 1 -> += 2 (model.py:106),L,missed,none,none,reviewer,not stated,"map effect on two images: 201,501 / 150,781, 127; killed as delivered on the review machine: no",R13:146
+inference release package,r3,M04,align_corners=False -> True (model.py:38),L,missed,none,none,reviewer,not stated,"map effect on two images: 174,638 / 102,267, 201; killed as delivered on the review machine: no",R13:147
+inference release package,r3,M05,accumulator float64 -> float32 (model.py:90),L,missed,none,none,reviewer,not stated,map effect on two images: 0 / 0; killed as delivered on the review machine: no,R13:148
+inference release package,r3,M06,np.rint -> np.floor (inference.py:61),L,caught,tests with a stand-in encoder: yes (1 test),behaviour test (stand-in encoder),reviewer,n/a (caught),killed as delivered on the review machine: no,R13:149
+inference release package,r3,M07,quantise reads float32 not float64 (inference.py:59),L,missed,none,none,reviewer,not stated,"map effect on two images: 1 / 0, 1; killed as delivered on the review machine: no",R13:150
+inference release package,r3,M08,drop + n (ensemble.py:22),L,caught,tests with a stand-in encoder: yes (2 tests),behaviour test (stand-in encoder),reviewer,n/a (caught),killed as delivered on the review machine: no,R13:151
+inference release package,r3,M09,hash check or True (inference.py:36),G,caught,tests with a stand-in encoder: yes (1 test),behaviour test (stand-in encoder),reviewer,n/a (caught),killed as delivered on the review machine: no,R13:152
+inference release package,r3,M10,max-pool -> avg-pool (model.py:36),L,missed,none,none,reviewer,not stated,"map effect on two images: 194,856 / 125,639, 254; killed as delivered on the review machine: no",R13:153
+inference release package,r4,M01,stride 256,W,caught,3 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:44
+inference release package,r4,M02,/254,W,caught,2 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:44
+inference release package,r4,M03,overlap count +2,L,caught,3 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:44
+inference release package,r4,M04,align_corners True,L,caught,2 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:44
+inference release package,r4,M05,float32 accumulator,L,caught,1 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:44
+inference release package,r4,M06,floor for rint,L,caught,5 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:44
+inference release package,r4,M07,float32 quantiser,L,caught,1 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:44
+inference release package,r4,M08,ensemble without +n,L,caught,3 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:44
+inference release package,r4,M09,hash check bypassed,G,caught,3 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:44
+inference release package,r4,M10,avg-pool,L,caught,2 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:44
+inference release package,r4,N01,TILE 480,W,caught,3 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:45
+inference release package,r4,N02,skip/up concatenation order swapped,L,caught,2 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:45
+inference release package,r4,N03,sigmoid x 0.99,L,caught,3 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:45
+inference release package,r4,N04,lower clip 1,B,caught,4 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:45
+inference release package,r4,N05,ensemble accumulator uint8,L,caught,2 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:45
+inference release package,r4,N08,probability_map default stride = tile,W,caught,2 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:45
+inference release package,r4,N09,quantiser scale 254,W,caught,5 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:45
+inference release package,r4,N10,nearest upsampling,L,caught,2 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:45
+inference release package,r4,N06,4-connectivity,L,caught,1 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:46
+inference release package,r4,N11,cut floor instead of ceil,B,caught,2 test(s) fail as delivered,behaviour test,reviewer,n/a (caught),,R14:46
+inference release package,r4,N07,low cut >= changed to > (post-processing),B,missed,none,none,reviewer,not stated,changes the instance encoding of all six test maps; 0 of 82 tests fail (R14 findings table),R14:47
+evaluation-record audit harness,r1,M1,E2 test_exit_code=-1 -> 0 (evaluate.py:344),W,caught,"test_E2, RetainedPattern x2, Disagreement x3",behaviour test,reviewer,n/a (caught),survivor; tied to a finding of the review (R15:38-43),R15:26
+evaluation-record audit harness,r1,M2,V1 passes status='FAILED' (verification.py:371),W,caught,test_V1,behaviour test,reviewer,n/a (caught),survivor; tied to a finding of the review (R15:38-43),R15:27
+evaluation-record audit harness,r1,M3,E2 passes status='TIMEOUT' (evaluate.py:338),W,caught,"test_E2, RetainedPattern x2",behaviour test,reviewer,n/a (caught),survivor; tied to a finding of the review (R15:38-43),R15:28
+evaluation-record audit harness,r1,M4,V4 keeps agent_error when resolved (verification.py:697),L,caught,test_V4e,behaviour test,reviewer,n/a (caught),survivor; tied to a finding of the review (R15:38-43),R15:29
+evaluation-record audit harness,r1,M5,drop the real-sandbox condition from the test-report gate,G,missed,none,none,reviewer,not stated,survivor; tied to a finding of the review (R15:38-43),R15:30
+evaluation-record audit harness,r1,M6,"""0 passed"" stdout branch leaves resolved=True (verification.py:679)",L,missed,none,none,reviewer,not stated,survivor; tied to a finding of the review (R15:38-43),R15:31
+evaluation-record audit harness,r1,M7,remove the 'patch file not found' setup-error raise,G,missed,none,none,reviewer,not stated,survivor; tied to a finding of the review (R15:38-43),R15:32
+evaluation-record audit harness,r1,M8,W1 passes status='ERROR' (evaluate.py:531),W,caught,test_W1,behaviour test,reviewer,n/a (caught),survivor; tied to a finding of the review (R15:38-43),R15:33
+evaluation-record audit harness,r1,M9,results.py serializer key error -> error_message,F,caught,test_results_py_serializer,behaviour test,reviewer,n/a (caught),survivor; tied to a finding of the review (R15:38-43),R15:34
+evaluation-record audit harness,r1,M10,V5 message renamed (verification.py:715),F,caught,test_V5,behaviour test,reviewer,n/a (caught),survivor; tied to a finding of the review (R15:38-43),R15:35
+evaluation-record audit harness,r1,M11,one verify path also passes the trace object (makes the record unserialisable),W,missed,none,none,reviewer,not stated,survivor; tied to a finding of the review (R15:38-43),R15:36
+evaluation-record audit harness,r1,M12,core default status set to UNKNOWN,W,caught,12 path tests + RetainedPattern x2 + W1 (15 tests),behaviour test,reviewer,n/a (caught),survivor; tied to a finding of the review (R15:38-43),R15:37
+evaluation-record audit harness,r2,M1,E2 test_exit_code=-1 -> 0 (evaluate.py:344),W,caught,3 test(s) fail (behavioural),behaviour test,reviewer,n/a (caught),,R17:1
+evaluation-record audit harness,r2,M2,V1 passes status='FAILED' (verification.py:371),W,caught,1 test(s) fail (behavioural),behaviour test,reviewer,n/a (caught),,R17:2
+evaluation-record audit harness,r2,M3,E2 passes status='TIMEOUT' (evaluate.py:338),W,caught,2 test(s) fail (behavioural),behaviour test,reviewer,n/a (caught),,R17:3
+evaluation-record audit harness,r2,M4,V4 keeps agent_error when resolved (verification.py:697),L,caught,1 test(s) fail (behavioural),behaviour test,reviewer,n/a (caught),,R17:4
+evaluation-record audit harness,r2,M5,drop the real-sandbox condition from the test-report gate,G,caught,2 test(s) fail (behavioural),behaviour test,reviewer,n/a (caught),,R17:5
+evaluation-record audit harness,r2,M6,"""0 passed"" stdout branch leaves resolved=True (verification.py:679)",L,caught,1 test(s) fail (behavioural),behaviour test,reviewer,n/a (caught),,R17:6
+evaluation-record audit harness,r2,M7,remove the 'patch file not found' setup-error raise,G,caught,1 test(s) fail (behavioural),behaviour test,reviewer,n/a (caught),,R17:7
+evaluation-record audit harness,r2,M8,W1 passes status='ERROR' (evaluate.py:531),W,caught,1 test(s) fail (behavioural),behaviour test,reviewer,n/a (caught),,R17:8
+evaluation-record audit harness,r2,M9,results.py serializer key error -> error_message,F,caught,3 test(s) fail (behavioural),behaviour test,reviewer,n/a (caught),,R17:9
+evaluation-record audit harness,r2,M10,V5 message renamed (verification.py:715),F,caught,1 test(s) fail (behavioural),behaviour test,reviewer,n/a (caught),,R17:10
+evaluation-record audit harness,r2,M11,one verify path also passes the trace object (makes the record unserialisable),W,caught,4 test(s) fail (behavioural),behaviour test,reviewer,n/a (caught),,R17:11
+evaluation-record audit harness,r2,M12,core default status set to UNKNOWN,W,caught,20 test(s) fail (behavioural),behaviour test,reviewer,n/a (caught),,R17:12
+evaluation-record audit harness,r2,N1,tool-budget >= -> > (agent_runner.py:934),B,caught,3 tests,behaviour test,reviewer,n/a (caught),caught (3 tests) (R16:86),R16:86
+evaluation-record audit harness,r2,N2,required-node check disabled (verification.py:337-338),G,caught,test_required_node_not_passed,behaviour test,reviewer,n/a (caught),caught (test_required_node_not_passed) (R16:87),R16:87
+evaluation-record audit harness,r2,N3,results.py writes resolved as test_exit_code == 0,L,missed,none,none,reviewer,not stated,the library-writer test never uses an exit-0-but-unresolved result (R16:88),R16:88
+evaluation-record audit harness,r2,N4,E2 treats a whitespace-only patch as empty (evaluate.py:324),L,missed,none,none,reviewer,not stated,the packet says this path is not executed (AUDIT:48) (R16:89),R16:89
+browser puzzle game,r1,1,Guide edges become the first edge that is not in the solution.,L,caught,"2 fail, 43 pass. following the guide through a real controller walks every step and wins once. the knot step completes the knot glyph, the ring step leaves the ring untouched.",behaviour test,reviewer,n/a (caught),"the full suite of 88 passes (R18:91, finding 1)",R18:87
+browser puzzle game,r1,2,hasEverSolved returns false immediately.,S,caught,"4 fail, 41 pass. The three old-save tests no forced lesson, same default board (1195e50, a4c552f, df4c3e6). a save written by the current controller after one solve is recognised.",behaviour test,reviewer,n/a (caught),"the full suite of 88 passes (R18:91, finding 1)",R18:88
+browser puzzle game,r1,3,markLessonSeen also writes the main save key,S,caught,"4 fail, 41 pass. finishing or skipping the lesson is remembered and never re-offered. The three old-save tests streak and records survive a visit that includes the lesson.",behaviour test,reviewer,n/a (caught),"the full suite of 88 passes (R18:91, finding 1)",R18:89
+browser puzzle game,r1,4,startingDifficulty always returns gentle.,W,caught,"3 fail, 42 pass. The three old-save tests no forced lesson, same default board.",behaviour test,reviewer,n/a (caught),"the full suite of 88 passes (R18:91, finding 1)",R18:90
+browser puzzle game,r1,5,assist timer constant set to 0 in the page's main module,W,missed,none,none,reviewer,not stated,"the full suite of 88 passes (R18:91, finding 1)",R18:91
+frame-rendering kit,r1,P01,"label taken from the wrong place (first item of the schedule always, ignoring the film file's word)",W,caught,"test_labels_come_from_the_film_file_only, test_measured_and_illustration_labels",behaviour test,reviewer,n/a (caught),,R24:118
+frame-rendering kit,r1,P02,every beat one frame late,B,caught,"test_beats_drive_their_elements, test_enter_base_draws_the_geometry_on_the_opening_frame, test_every_film_frame_in_the_real_face_is_clean, test_every_film_frame_is_drawn_in_the_face_only",behaviour test,reviewer,n/a (caught),,R24:119
+frame-rendering kit,r1,P03,frame count off by one in the shot resolver,B,caught,test_three_frame_allowance_under_a_minimum,behaviour test,reviewer,n/a (caught),,R24:120
+frame-rendering kit,r1,P04,frame count off by one in deliver (one frame short),B,missed,none,none,reviewer,no,"the record: deliver would crash at run time, not a silent bad delivery (R24:121)",R24:121
+frame-rendering kit,r1,P05,typeface weight swapped: cards drawn at a lighter weight,W,missed,none,none,reviewer,not stated,silent: every card drawn Medium instead of Bold; no test checks a role's weight (R24:122),R24:122
+frame-rendering kit,r1,P06,theme colours: warm and cool swapped,W,missed,none,none,reviewer,not stated,"silent: tests check accent ROLES (th.cool/th.warm), not the theme's values; COLOUR_PROOF uses its own hard-coded patches (R24:123)",R24:123
+frame-rendering kit,r1,P07,theme colour changed slightly (one hex value),W,missed,none,none,reviewer,not stated,"silent, as P06 (R24:124)",R24:124
+frame-rendering kit,r1,P08,typeface file hash check weakened (font file hash ignored),G,caught,test_missing_file_and_differing_hashes_are_refused,behaviour test,reviewer,n/a (caught),,R24:125
+frame-rendering kit,r1,P09,plan-hash check weakened (pinned plan hash ignored),G,caught,test_refusals_happen_before_any_browser,behaviour test,reviewer,n/a (caught),,R24:126
+frame-rendering kit,r1,P10,release film-file check weakened,G,missed,none,none,reviewer,not stated,silent: release would render the pinned plan with another FILM.json; no test (R24:127),R24:127
+frame-rendering kit,r1,P11,TEXT.json drops the last visible text of each frame,F,caught,"test_labels_come_from_the_film_file_only, test_text_list_names_the_landed_roll_figures",behaviour test,reviewer,n/a (caught),,R24:128
+frame-rendering kit,r1,P12,a numeral on screen not in the source text: a counter shows one more than the total,F,caught,"test_every_film_frame_in_the_real_face_is_clean, test_every_sample_frame_is_clean",behaviour test,reviewer,n/a (caught),,R24:129
+frame-rendering kit,r1,P13,number-not-in-source check switched off,G,missed,none,none,reviewer,not stated,silent: the N2/G-SOURCE number check itself has no planted-number test (P12 is caught only because this check fires) (R24:130),R24:130
+frame-rendering kit,r1,P14,label moved into the caption band (y 818 -> 900),F,caught,"test_every_film_frame_in_the_real_face_is_clean, test_every_film_frame_is_drawn_in_the_face_only, test_every_sample_frame_is_clean, test_the_final_plans_resolve_and_draw",behaviour test,reviewer,n/a (caught),,R24:131
+frame-rendering kit,r1,P15,static-gate limit 5.0 -> 50 s,G,missed,none,none,reviewer,not stated,silent: a 50 s static clip would be delivered; no test of the limit value (R24:132),R24:132
+frame-rendering kit,r1,P16,kit self-manifest check weakened (existence only),G,missed,none,none,reviewer,not stated,silent: an edited kit file with its old manifest line would render; no test (R24:133),R24:133
+frame-rendering kit,r1,P17,PNG contract weakened (RGBA accepted),G,caught,test_png_contract,behaviour test,reviewer,n/a (caught),,R24:134
+frame-rendering kit,r1,P18,release mode accepts a stand-in typeface set,G,missed,none,none,reviewer,not stated,"silent at the release check; the stand-in FACE.json's kit-only keys would still be refused by the driver, but the kit's own release guard is untested (R24:135)",R24:135
+frame-rendering kit,r1,P19,new card after a card lands 0.5 s late,O,caught,test_cards_come_from_the_film_file,behaviour test,reviewer,n/a (caught),,R24:136
+frame-rendering kit,r1,P20,stage clip lets drawing into the caption band,G,caught,test_nothing_draws_outside_the_stage,behaviour test,reviewer,n/a (caught),,R24:137

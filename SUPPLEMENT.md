@@ -129,3 +129,14 @@ In six text-only reads on the first machine, readers of other families first rai
 ### The second machine: two patterns
 
 Two patterns repeat. Where the sheet reports authors' own plants (the money-cap harness 20 of 20, the chain's two candidates 67 of 67 and 4 of 4, the results-page program 66 of 66), every one was killed, while non-author plants on the harness, the chain and the results-page program survived (7, 11 and 4; Table 6). And checks that cannot fail recurred: three attack suites exited 0 with a planted admission and with their engine unreadable. The second machine shows that green suites over real faults were also found where the reviewer was of another family; it does not correct the first machine's counts.
+
+## Added after submission (2026-11-13): the preregistered reader test, said exactly
+
+Everything above is as it stood when the paper was submitted on 2026-11-12. This note was added the next day.
+
+The paper's limits section says that a preregistered test of a small open-weights model as the text-only reader
+"was not completed and is not reported". More exactly: on 2026-11-11 the test was started on the second machine.
+Two of its fifteen planned calls were made and charged, and neither returned any answer text; the run stopped
+there by its own rule, and thirteen calls were never made. One further call outside the protocol, with a larger
+output limit, also returned no text. No answer was scored, and nothing was seen that bears on the answer key.
+The cause was not established. The record of these calls reached the paper's authors only after the submission.

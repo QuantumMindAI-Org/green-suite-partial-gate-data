@@ -1,5 +1,7 @@
 # Data for "A Green Suite Is a Partial Gate"
 
+**The paper itself: [`PAPER.md`](PAPER.md)** (as submitted, 12 November 2026), with the cut tables in [`SUPPLEMENT.md`](SUPPLEMENT.md).
+
 Review records from a small company whose software is written, tested and reviewed by AI agents. After each
 author agent's test suite passed, a non-author agent ran the package and planted faults to see what the suite
 would catch. These files are the per-fault data behind the paper's tables.

@@ -1,0 +1,30 @@
+plants: n=453 agree=368 raw=0.812 kappa=0.768
+  first rater classes: {'B': 26, 'C': 9, 'E': 14, 'F': 20, 'G': 147, 'L': 86, 'O': 20, 'S': 55, 'W': 76}
+  second rater classes: {'B': 25, 'C': 11, 'E': 8, 'F': 18, 'G': 141, 'L': 78, 'O': 23, 'S': 51, 'W': 98}
+  class B: first-rater n=26, second agrees on 22 (0.85)
+  class C: first-rater n=9, second agrees on 9 (1.00)
+  class E: first-rater n=14, second agrees on 6 (0.43)
+  class F: first-rater n=20, second agrees on 13 (0.65)
+  class G: first-rater n=147, second agrees on 129 (0.88)
+  class L: first-rater n=86, second agrees on 62 (0.72)
+  class O: first-rater n=20, second agrees on 20 (1.00)
+  class S: first-rater n=55, second agrees on 42 (0.76)
+  class W: first-rater n=76, second agrees on 65 (0.86)
+  disagreements (first -> second): L->W 19, S->G 7, W->L 6, G->S 6, E->W 5, G->B 3, S->L 3, G->L 3, F->L 3, G->W 3, F->W 3, B->W 2, G->E 2, L->S 2, E->G 2, W->G 2, S->C 2, W->F 2, L->F 2, W->O 1, L->G 1, S->W 1, E->O 1, F->S 1, B->L 1, B->O 1, G->F 1
+  disagreements by second-rater confidence: {'medium': 59, 'low': 9, 'high': 17}
+findings: n=47 agree=40 raw=0.851 kappa=0.826
+  first rater classes: {'B': 1, 'E': 6, 'F': 10, 'G': 7, 'L': 4, 'O': 5, 'R': 3, 'S': 9, 'W': 2}
+  second rater classes: {'B': 1, 'E': 4, 'F': 10, 'G': 9, 'L': 7, 'O': 5, 'R': 3, 'S': 7, 'W': 1}
+  class B: first-rater n=1, second agrees on 1 (1.00)
+  class E: first-rater n=6, second agrees on 4 (0.67)
+  class F: first-rater n=10, second agrees on 9 (0.90)
+  class G: first-rater n=7, second agrees on 7 (1.00)
+  class L: first-rater n=4, second agrees on 4 (1.00)
+  class O: first-rater n=5, second agrees on 4 (0.80)
+  class R: first-rater n=3, second agrees on 3 (1.00)
+  class S: first-rater n=9, second agrees on 7 (0.78)
+  class W: first-rater n=2, second agrees on 1 (0.50)
+  disagreements (first -> second): W->L 1, S->L 1, F->L 1, O->G 1, S->O 1, E->F 1, E->G 1
+  disagreements by second-rater confidence: {'high': 3, 'medium': 4}
+all: n=500 raw=0.816 kappa=0.776
+resource-or-scale (R): first rater findings 3, plants 0; second rater findings 3, plants 0

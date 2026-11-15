@@ -1,0 +1,454 @@
+plant_id,class,confidence,reason
+P01,B,high,
+P02,B,high,
+P03,B,medium,Midnight edge changes; original comparison is not specified.
+P04,B,high,
+P05,B,high,
+P06,B,high,
+P07,B,medium,Adjacent usage value changes acceptance; precise threshold edit is unstated.
+P08,W,medium,"Reserve appears to be an arithmetic input, not an acceptance threshold."
+P09,W,medium,Cap is used within the sum; comparison threshold is not described.
+P10,W,high,
+P11,W,high,
+P12,W,high,
+P13,W,high,
+P14,W,high,
+P15,W,high,
+P16,W,high,
+P17,W,high,
+P18,W,medium,Sorting changes the layout supplied to transpilation.
+P19,W,medium,Bit order changes the mapping used; downstream effect is unstated.
+P20,W,high,
+P21,W,high,
+P22,L,high,
+P23,B,medium,Limit denotes a threshold; widening direction is not given.
+P24,L,medium,Gate order changes basis computation rather than administrative side effects.
+P25,L,medium,Gate order changes basis computation rather than administrative side effects.
+P26,L,medium,Gate order changes basis computation rather than administrative side effects.
+P27,W,high,
+P28,W,high,
+P29,W,high,
+P30,O,low,Barrier removal changes execution ordering; specific downstream effects are unstated.
+P31,L,high,
+P32,L,high,
+P33,B,high,
+P34,W,medium,Comparison uses the wrong time operand.
+P35,G,high,
+P36,W,medium,Deadline uses the wrong base value.
+P37,B,medium,Duration appears to be a threshold reduced by one hour.
+P38,B,high,
+P39,W,medium,Lateness uses the wrong base value.
+P40,L,medium,Cancellation decision includes an inappropriate job state.
+P41,B,low,Blocked date endpoint changes; original endpoint is unspecified.
+P42,L,medium,Blocking decision uses an incorrect condition on R.
+P43,L,high,
+P44,L,high,
+P45,L,high,
+P46,G,high,
+P47,G,high,
+P48,G,high,
+P49,G,high,
+P50,W,medium,Sentence text replaces the flag used as input.
+P51,G,high,
+P52,B,medium,Allowed job count moves from none to one.
+P53,B,medium,More-than-one threshold moves to two; edge rule applies.
+P54,S,high,
+P55,L,low,Exception handling changes; downstream state and timing effects are unspecified.
+P56,G,high,
+P57,W,high,
+P58,G,high,
+P59,G,medium,Earlier admission widens the allowed window.
+P60,G,high,
+P16,W,high,
+P29,W,high,
+P36,W,medium,Deadline uses the wrong base value.
+P39,W,medium,Lateness uses the wrong base value.
+P43,L,high,
+P44,L,high,
+P46,G,high,
+P47,G,high,
+P48,G,high,
+P49,G,high,
+P50,W,medium,Sentence text replaces the flag used as input.
+P60,G,high,
+N01,S,high,
+N02,C,high,
+N03,C,high,
+N04,C,high,
+N05,S,high,
+N06,S,high,
+N07,S,medium,Existing repeat marker no longer prevents an initial create.
+N08,S,high,
+N09,S,medium,Create history no longer guards preparation.
+N10,B,high,
+N11,W,medium,Repeat date uses the wrong source value.
+N12,B,medium,Reading day becomes the inclusive start of the repeat window.
+N13,G,high,
+N14,L,medium,Decision assigns a logically incompatible outcome to a VOID rule.
+N15,G,high,
+N16,G,medium,Unresolved rules no longer block acceptance.
+N17,G,high,
+N18,L,high,
+N19,L,medium,NOT_COMPUTED receives the wrong verdict rather than a formatting change.
+N20,G,medium,An ineligible preceding outcome no longer prevents repeat.
+N21,G,high,
+N22,G,high,
+N23,G,high,
+N24,G,high,
+N25,W,high,
+N26,G,high,
+N27,L,medium,Counting logic omits uncertain creates; record storage is not changed.
+N28,L,high,
+N29,L,high,
+N30,L,high,
+N31,E,medium,Fake-mode configuration permits operation in the real root.
+N32,S,medium,Missing persisted day evidence compromises repeat eligibility state.
+Q01,W,high,
+Q02,W,medium,Options omit the tag value required by the operation.
+Q03,G,high,
+Q04,G,high,
+Q05,E,medium,Fake-root configuration permits nesting within the real ledger.
+Q06,L,medium,Containment predicate uses equality instead of containment.
+Q07,G,high,
+Q08,S,high,
+Q09,S,high,
+Q10,S,high,
+Q11,G,medium,Only the ledger/witness agreement comparison is removed.
+Q12,S,high,
+Q13,O,high,
+Q14,G,high,
+Q15,G,medium,"Listing evidence is discarded, weakening the refusal check."
+Q16,W,high,
+Q17,L,medium,Evidence is assigned the wrong logical significance.
+Q18,S,high,
+Q19,F,high,
+Q20,S,high,
+Q21,W,medium,Flag calculation uses the wrong record source.
+Q22,L,medium,Dry-run control wrongly permits writes; no reordered steps are described.
+Q23,L,medium,Dry-run control wrongly permits directory creation.
+Q24,G,high,
+Q25,G,high,
+Q26,G,high,
+Q27,G,medium,Unresolved reading no longer blocks repeat authorization.
+Q28,L,medium,Rule completion logic omits required cases.
+Q29,L,medium,Failed-read decision omits the required same-stamp outcome.
+Q30,S,high,
+F01,S,high,
+F02,C,high,
+F03,C,high,
+F04,S,high,
+F05,G,high,
+F06,G,high,
+F07,W,low,Reader module is imported; timing and state consequences are unspecified.
+F08,G,high,
+F09,G,high,
+F10,G,high,
+F11,W,medium,Resample size constant changes; unit selection is not otherwise described.
+F12,L,high,
+F13,L,high,
+F14,W,high,
+F15,W,high,
+F16,L,high,
+F17,W,medium,Computed endpoint values are exchanged.
+F18,O,high,
+F19,O,high,
+F20,O,high,
+F21,S,high,
+F22,G,high,
+F23,G,high,
+F24,G,high,
+F25,L,high,
+F26,W,high,
+F27,G,high,
+F28,G,high,
+F29,G,high,
+F30,W,high,
+F01,S,high,
+F02,C,high,
+F03,C,high,
+F04,S,high,
+F05,G,high,
+F06,G,high,
+F07,W,low,Reader module is imported; timing and state consequences are unspecified.
+F08,G,high,
+F09,G,high,
+F10,G,high,
+F11,W,medium,Resample size constant changes; unit selection is not otherwise described.
+F12,L,high,
+F13,L,high,
+F14,W,high,
+F15,W,high,
+F16,L,high,
+F17,W,medium,Computed endpoint values are exchanged.
+F18,O,high,
+F19,O,high,
+F20,O,high,
+F21,S,high,
+F22,G,high,
+F23,G,high,
+F24,G,high,
+F25,L,high,
+F26,W,high,
+F27,G,high,
+F28,G,high,
+F29,G,high,
+F30,W,high,
+N01,G,medium,Required authorization ruling no longer gates resume.
+N02,S,high,
+N03,S,high,
+N04,S,high,
+N05,G,high,
+N06,S,high,
+N07,G,high,
+N08,G,high,
+N09,G,high,
+N10,G,medium,Constant counts replace the computation needed to validate geometry.
+N11,G,high,
+N12,G,medium,Symlink acceptance removes a rejection check; no state relocation is described.
+N13,O,high,
+N14,O,high,
+N15,E,high,
+N16,G,high,
+N17,G,high,
+N18,G,high,
+N19,G,high,
+N20,G,high,
+F01,S,high,
+F02,C,high,
+F03,C,high,
+F04,S,high,
+F05,G,high,
+F06,G,high,
+F07,W,low,Reader module is imported; timing and state consequences are unspecified.
+F08,G,high,
+F09,G,high,
+F10,G,high,
+F11,W,medium,Resample size constant changes; unit selection is not otherwise described.
+F12,L,high,
+F13,L,high,
+F14,W,high,
+F15,W,high,
+F16,L,high,
+F17,W,medium,Computed endpoint values are exchanged.
+F18,O,high,
+F19,O,high,
+F20,O,high,
+F21,S,high,
+F22,G,high,
+F23,G,high,
+F24,G,high,
+F25,L,high,
+F26,W,high,
+F27,G,high,
+F28,G,high,
+F29,G,high,
+F30,W,high,
+N01,G,medium,Required authorization ruling no longer gates resume.
+N02,S,high,
+N03,S,high,
+N04,S,high,
+N05,G,high,
+N06,S,high,
+N07,G,high,
+N08,G,high,
+N09,G,high,
+N10,G,medium,Constant counts replace the computation needed to validate geometry.
+N11,G,high,
+N12,G,medium,Symlink acceptance removes a rejection check; no state relocation is described.
+N13,O,high,
+N14,O,high,
+N15,E,high,
+N16,G,high,
+N17,G,high,
+N18,G,high,
+N19,G,high,
+N20,G,high,
+R01,S,high,
+R02,G,medium,Marker disagreement comparison is removed.
+R03,S,high,
+R04,S,high,
+R05,E,high,
+R06,O,high,
+R07,E,high,
+R08,W,low,Alias removal permits a different helper object; consequences are unspecified.
+R09,O,low,Repeated call changes side-effect timing; specific effects are unstated.
+R10,S,high,
+R11,S,high,
+R12,S,high,
+R13,S,high,
+R14,S,high,
+R15,S,high,
+R16,W,medium,Directory constant changes; resulting state scope is not specified.
+R17,G,medium,Symlink acceptance removes a rejection check; no state relocation is described.
+R18,W,high,
+H2-void,L,low,Matching logic fails; the matching expression is unspecified.
+H2-always,L,medium,Void decision accepts every selector instead of the intended case.
+which-dropped,W,low,Selector is replaced with None; its downstream role is unstated.
+serialise,W,medium,"Rehearsal uses the wrong document, matching the codebook's harness example."
+require-25,L,medium,Rehearsal retains an inappropriate acceptance condition rather than weakening it.
+index,G,medium,Index validation is skipped; changed state reads are not described.
+R01,S,high,
+R02,G,medium,Byte disagreement comparison is removed.
+R13,S,high,
+R14,S,high,
+R17,G,medium,Only the ledger symlink rejection check is dropped.
+R05,E,high,
+R16,W,low,Constant's role is unstated; same-package R16 identifies a directory constant.
+M1,C,high,
+M1b,C,medium,Explicit loss of exclusive creation dominates the partial state check removal.
+M2,O,high,
+M3a,S,high,
+M3b,S,high,
+M4a,G,high,
+M4b,G,high,
+M5a,O,high,
+M5b,G,high,
+M6a,W,high,
+M6b,W,high,
+M7a,W,medium,Resample size parameter doubles; sampling method itself is not changed.
+M7b,L,high,
+M8,W,medium,Computed endpoint values are exchanged.
+M9,F,medium,Void outcome lacks a required output key.
+M9b,F,medium,Void outcome lacks its required explanatory field.
+M10,S,high,
+M11,E,high,
+M12,S,medium,Resume history is omitted from persistent state.
+M13,O,high,
+M14,L,medium,String membership changes selector matching semantics.
+M15,L,high,
+P01,G,high,
+P02,G,high,
+P03,G,high,
+P04,G,high,
+P05,G,high,
+P06,L,high,
+P07,W,medium,Empty foreground list changes the crop-selection input.
+P08,L,high,
+P09,L,high,
+P10,L,high,
+P11,W,high,
+P12,L,medium,Scoring omits a mask operation on otherwise correct inputs.
+P13,L,high,
+P14,F,high,
+P15,F,high,
+P16,L,medium,Mask geometry is transposed before encoding.
+P17,B,high,
+P18,B,medium,Exactly zero is treated differently at the decision edge.
+P19,F,high,
+P20,W,high,
+P01,G,high,
+P02,S,medium,Recovery state is not saved before publication.
+P03,O,high,
+P04,G,high,
+P05,G,high,
+P06,G,high,
+P07,G,medium,Nonempty-directory refusal no longer guards removal.
+P08,W,medium,Action path is placed in the wrong directory tree.
+P09,G,high,
+P10,W,high,
+C11,G,high,
+C12,W,high,
+C13,W,high,
+C14,G,high,
+C15,B,medium,Lifetime is a threshold; original value and widening direction are unstated.
+R16,G,medium,Readback no longer requires a mandatory sentence.
+R17,G,high,
+R18,G,high,
+R19,G,low,Empty INTERNAL appears to remove content checks; exact semantics are unstated.
+R20,G,high,
+D21,W,low,Literal substitutions are specified; their semantic roles are not described.
+D22,W,high,
+D23,W,low,Path representation changes; whether used or displayed is unstated.
+D24,G,medium,Stand-in validation is skipped; once-only state is not described.
+D25,G,low,Stand-in requirement appears removed; identifier's exact role is unspecified.
+D26,W,high,
+D27,G,high,
+D28,G,medium,Precheck coverage loses an existing directory.
+D29,G,low,Removing an internal term appears to weaken content checking.
+D30,F,high,
+D31,B,medium,One-step count error; exact edge operation is unspecified.
+D32,G,medium,Marker-pair validation is removed; once-only state is not described.
+M01,W,high,
+M02,L,medium,Divisor changes normalization arithmetic on otherwise unchanged inputs.
+M03,L,high,
+M04,L,medium,Interpolation geometry changes despite unchanged input data.
+M05,L,high,
+M06,L,high,
+M07,L,high,
+M08,L,high,
+M09,G,high,
+M10,L,high,
+M01,W,high,
+M02,L,medium,Divisor changes normalization arithmetic on otherwise unchanged inputs.
+M03,L,high,
+M04,L,medium,Interpolation geometry changes despite unchanged input data.
+M05,L,high,
+M06,L,high,
+M07,L,high,
+M08,L,high,
+M09,G,high,
+M10,L,high,
+N01,W,high,
+N02,W,medium,Tensor inputs exchange positions in concatenation.
+N03,L,high,
+N04,B,medium,Lower clipping bound is a threshold.
+N05,L,high,
+N08,W,high,
+N09,L,medium,Numerical scale changes quantization arithmetic on otherwise unchanged inputs.
+N10,L,high,
+N06,L,high,
+N11,L,high,
+N07,B,high,
+M1,F,high,
+M2,W,medium,Wrong status value is passed to the record path.
+M3,W,medium,Wrong status value is passed to the record path.
+M4,F,medium,Resolved record retains an inappropriate error field.
+M5,G,high,
+M6,L,high,
+M7,G,high,
+M8,W,medium,Wrong status value is passed to the record path.
+M9,F,high,
+M10,F,high,
+M11,W,medium,Serialization receives an inappropriate trace object.
+M12,W,medium,Changed default supplies a wrong status value.
+M1,F,high,
+M2,W,medium,Wrong status value is passed to the record path.
+M3,W,medium,Wrong status value is passed to the record path.
+M4,F,medium,Resolved record retains an inappropriate error field.
+M5,G,high,
+M6,L,high,
+M7,G,high,
+M8,W,medium,Wrong status value is passed to the record path.
+M9,F,high,
+M10,F,high,
+M11,W,medium,Serialization receives an inappropriate trace object.
+M12,W,medium,Changed default supplies a wrong status value.
+N1,B,high,
+N2,G,high,
+N3,L,high,
+N4,L,medium,Patch-emptiness decision changes for whitespace input.
+1,W,high,
+2,S,medium,Stored solve history is ignored by the history predicate.
+3,S,medium,Lesson tracking writes unrelated persistent save state.
+4,W,high,
+5,W,medium,Timer parameter changes; delayed behavior is not otherwise described.
+P01,W,high,
+P02,O,medium,Beat timing shifts; no changed boundary comparison is specified.
+P03,B,medium,One-frame count error changes the shot endpoint.
+P04,B,medium,One-frame deficit changes the delivery endpoint.
+P05,W,medium,Rendering uses the wrong typeface weight parameter.
+P06,W,high,
+P07,W,high,
+P08,G,high,
+P09,G,high,
+P10,G,high,
+P11,F,high,
+P12,F,high,
+P13,G,high,
+P14,W,medium,Label rendering uses the wrong position value.
+P15,G,high,
+P16,G,high,
+P17,G,high,
+P18,G,high,
+P19,O,high,
+P20,F,medium,Clipping permits visible output outside the intended stage.

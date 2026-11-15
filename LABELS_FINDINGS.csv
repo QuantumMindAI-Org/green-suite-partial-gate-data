@@ -1,0 +1,48 @@
+finding_id,class,confidence,reason
+F01,L,high,
+F02,B,high,
+F03,S,high,
+F04,L,high,
+F05,L,high,
+F06,G,medium,An undecided void rule fails to block repeat authorization.
+F07,S,high,
+F08,S,high,
+F09,E,medium,Rehearsal folder configuration redirects writes into the real ledger.
+F10,L,medium,Dry-run control wrongly permits writes; no reordered steps are described.
+F11,L,medium,Failed-read decision logic omits a required rule.
+F12,O,high,
+F13,O,high,
+F14,G,high,
+F15,S,high,
+F16,G,high,
+F17,G,high,
+F18,E,high,
+F19,O,high,
+F20,S,high,
+F21,O,high,
+F22,R,high,
+F23,R,high,
+F24,G,medium,External index binding is absent; altered records are accepted.
+F25,F,medium,Invalid data is detected but surfaced through the wrong error form.
+F26,S,high,
+F27,R,high,
+F28,F,high,
+F29,G,high,
+F30,S,medium,Rollback cannot recover published state after external content alteration.
+F31,O,medium,Directory creation precedes its recovery record; interruption exposes that ordering.
+F32,F,medium,Instruction text names an outdated folder; executable routing is not described.
+F33,E,high,
+F34,E,high,
+F35,W,high,
+F36,G,high,
+F37,L,high,
+F38,L,medium,Acceptance logic is reproduced incorrectly outside one path.
+F39,G,high,
+F40,F,high,
+F41,F,high,
+F42,F,high,
+F43,F,high,
+F44,F,high,
+F45,F,high,
+F46,F,high,
+F47,G,high,

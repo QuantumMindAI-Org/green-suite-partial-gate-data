@@ -24,3 +24,22 @@ Limits: one organisation, a few days, faults planted by hand by the reviewer, an
 supports a causal claim or a frequency beyond these records.
 
 Licence: Apache License 2.0. Contact: QuantumMind AI LLC, https://qmai.dev
+
+## Revision 2 (15 November 2026)
+
+The paper's revision 2, [`PAPER_r2.md`](PAPER_r2.md), adds a blind second rater and a script that recomputes every
+number in the text. New files:
+
+| File | What it holds |
+|---|---|
+| `LABELS_PLANTS.csv`, `LABELS_FINDINGS.csv` | The blind second rater's fault class for every plant and real fault, with confidence and a short reason |
+| `agreement.py` | Computes agreement (raw and Cohen's kappa) between the first rater's classes and the second rater's labels |
+| `AGREEMENT_OUTPUT.txt` | Its output: kappa 0.768 on 453 plants, 0.826 on 47 real faults, 0.776 overall |
+| `CLAIM_LEDGER.csv` | The audit's claim ledger: each claim in the paper checked against these files |
+| `verify_numbers.py` | Recomputes every number in revision 2 from the files here and prints MATCH or MISMATCH per number |
+| `VERIFY_OUTPUT.txt` | Its output from this repository: 161 numbers checked, 161 MATCH, 0 MISMATCH |
+
+To reproduce from a clone of this repository (Python 3, standard library only):
+
+    python3 agreement.py PLANTS.csv FINDINGS.csv LABELS_PLANTS.csv LABELS_FINDINGS.csv
+    python3 verify_numbers.py . . .
